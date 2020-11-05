@@ -494,7 +494,7 @@ img {
 }
 
 .classic-list:nth-child(odd) .classic-list-content:nth-child(even) {
-  margin-left: 0;
+  margin-right: 30px;
 }
 
 .classic-list ~ .classic-list {
@@ -515,6 +515,9 @@ img {
   .classic-list:nth-child(odd) .classic-list-content:nth-child(even) {
     margin-left: 30px;
   }
+  .classic-list:nth-child(odd) .classic-list-content:nth-child(even) {
+    margin-right: 0px;
+  }
   .classic-list ~ .classic-list {
     margin-top: 8px;
   }
@@ -530,6 +533,9 @@ img {
   }
   .classic-list:nth-child(odd) .classic-list-content:nth-child(even) {
     margin: 0;
+  }
+  .classic-list:nth-child(odd) .classic-list-content:nth-child(even) {
+    margin-right: 30px;
   }
   .classic-list .photo {
     width: 345px;
