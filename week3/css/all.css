@@ -150,7 +150,7 @@ img {
 
 @media only screen and (max-width: 767px) {
   .navbar h1 {
-    width: 100%;
+    margin: 0 auto;
     padding: 10px 0;
   }
 }
@@ -171,7 +171,6 @@ img {
     width: 46px;
     height: 27px;
     background-size: contain;
-    margin: 0 auto;
   }
 }
 
@@ -272,12 +271,14 @@ img {
 @media only screen and (max-width: 1110px) {
   .slogan h5 {
     font-size: 20px;
+    line-height: 28px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .slogan h5 {
     font-size: 16px;
+    line-height: 22px;
   }
 }
 
@@ -289,7 +290,7 @@ img {
 @media only screen and (max-width: 1110px) {
   .slogan h3 {
     font-size: 48px;
-    line-height: 22px;
+    line-height: 67px;
   }
 }
 
@@ -350,8 +351,13 @@ img {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1110px) {
+  .about-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .about-list li {
@@ -472,11 +478,6 @@ img {
 @media only screen and (max-width: 767px) {
   .classic-list {
     display: block;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .classic-list {
     position: relative;
   }
 }
@@ -493,7 +494,7 @@ img {
 }
 
 .classic-list:nth-child(odd) .classic-list-content:nth-child(even) {
-  margin-right: 30px;
+  margin-left: 0;
 }
 
 .classic-list ~ .classic-list {

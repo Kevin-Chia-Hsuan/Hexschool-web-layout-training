@@ -49,7 +49,7 @@
     }
     h1 {
         @include mobile {
-            width: 100%;
+            margin: 0 auto;
             padding: 10px 0;
         }
     }
@@ -62,7 +62,6 @@
     @include mobile {
         @include size(46px,27px);
         background-size: contain;
-        margin: 0 auto;
     }
 }
 .nav-menu {
@@ -124,9 +123,11 @@
         line-height: 50px;
         @include pc-pad {
             font-size: $text-sm;
+            line-height: 28px;
         }
         @include mobile {
             font-size: $text-s;
+            line-height: 22px;
         }
     }
     h3 {
@@ -134,10 +135,10 @@
         line-height: 90px;
         @include pc-pad {
             font-size: $text-xl;
-            line-height: 22px;
+            line-height: 67px;
         }
         @include mobile {
-            font-size: 32px;
+            font-size: $text-m;
             line-height: 45px;
         }
     }
@@ -170,7 +171,9 @@
 .about-list {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    @include pc-pad {
+        flex-wrap: wrap;
+    }
     li {
         width: 208px;
         text-align: center;
@@ -243,8 +246,6 @@
     display: flex;
     @include mobile {
         display: block;
-    }
-    @include mobile {
         position: relative;
     }
     &:nth-child(odd){
@@ -257,7 +258,7 @@
     }
     &:nth-child(odd) {
         .classic-list-content:nth-child(even){
-            margin-right: 30px;
+            margin-left: 0;
         }
     }
     & ~ .classic-list {
@@ -378,11 +379,11 @@
             color: $text-color-Tertiary;
             line-height: 95px;
             @include pc-pad {
-                font-size: 32px;
+                font-size: $text-m;
                 line-height: 43px;
             }
             @include mobile {
-                font-size: 32px;
+                font-size: $text-m;
                 line-height: 25px;
             }
         }
