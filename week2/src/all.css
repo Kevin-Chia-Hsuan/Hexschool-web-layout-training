@@ -1,0 +1,266 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/* .wrap {
+    max-width: 1920px;
+} */
+.container {
+    width: 1200px;
+}
+
+/* hrader */
+.header {
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 960px;
+    border: solid 1px #707070;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-content {
+    color: #fff;
+    font-weight: bold;
+    margin-top: 85px;
+}
+.header-content p {
+    font-size: 24px;
+    line-height: 28px;
+}
+.header-content h1 {
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 94px;
+}
+.header-content h3 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 32px;
+    margin-left: 13px;
+}
+.header-icon {
+    display: flex;
+    margin-left: 13px;
+    margin-top: 48px;
+}
+.header-icon li {
+    width: 60px;
+    height: 60px;
+    transition: all 0.5s;
+}
+.header-icon li:hover {
+    transform: scale(1.1);
+}
+.header-icon li ~ li {
+    margin-left: 16px;
+}
+
+/* about */
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+}
+.about h2 {
+    font-size: 64px;
+    line-height: 75px;
+    margin-top: 64px;
+    margin-bottom: 40px;
+}
+.about-info {
+    margin: 24px 0;
+}
+.about-info li {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+.about-info li:last-child {
+    line-height: 36px;
+}
+.about-info li:not(:last-child) {
+    margin-bottom: 8px;
+}
+.about-list-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #000;
+    width: 384px;
+    padding-top: 32px;
+}
+.about-list {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+}
+.circle {
+    background-color: #891818;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+.text {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* content */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    margin-top: 56px;
+}
+.content h2 {
+    font-size: 64px;
+    line-height: 75px;
+    margin-top: 64px;
+}
+.content h3 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 16px;
+}
+.content p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 32px;
+    margin-bottom: 68px;
+}
+.content-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 160px;
+}
+
+/* work */
+.work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+}
+.work h2 {
+    font-size: 64px;
+    line-height: 75px;
+    margin-top: 64px;
+}
+.work p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 24px;
+}
+.work-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 56px;
+}
+.work-photo {
+    overflow: hidden;
+}
+.work-photo img {
+    transition: all 0.5s;
+}
+.work-photo img:hover {
+    transform: scale(1.1);
+}
+.work-content {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 16px;
+}
+
+/* contact */
+.contact {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    margin-top: 160px;
+    padding-top: 64px;
+    padding-bottom: 80px;
+}
+.contact h2 {
+    font-size: 64px;
+    line-height: 75px;
+}
+.contact li {
+    font-size: 24px;
+    line-height: 33px;
+    margin-top: 16px;
+}
+.contact a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+}
+.contact a:hover {
+    color: red;
+}

@@ -1,0 +1,141 @@
+.wrap {
+    width: 1920px;
+    font-family: "Kumbh Sans", sans-serif;
+}
+.container {
+    width: 1200px;
+    @include center;
+}
+/* name */
+.name {
+    padding-bottom: 24px;
+    border-bottom: 2px solid $border-bottom-primary;
+    h1 {
+        margin-top: 40px;
+        font-size: $font-xl;
+    }
+}
+/* profile、education */
+.profile p,
+.education li {
+    margin-top: 16px;
+    font-size: $font-m;
+    line-height: 1.5;
+}
+.title {
+    margin-top: 56px;
+    font-size: $font-l;
+    font-weight: bold;
+    padding-bottom: 16px;
+    border-bottom: 2px solid $border-bottom-secondary;
+    span {
+        margin-left: 16px;
+        font-size: $font-m;
+        color: $text-color-secondary;
+        vertical-align: middle;
+    }
+}
+.profile {
+    margin-top: 48px;
+    p + p {
+        margin-top: 24px;
+        margin-bottom: 80px;
+    }
+}
+.education {
+    margin-bottom: 72px;
+}
+
+/* shills */
+.skills {
+    background-color: $bgc-primary;
+    padding-bottom: 52px;
+    margin-bottom: 80px;
+    h2 {
+        width: 996px;
+        @include center;
+        font-size: $font-l;
+        color: $text-color-primary;
+        padding-top: 32px;
+        padding-bottom: 8px;
+        margin-bottom: 40px;
+        border-bottom: 2px solid $border-bottom-secondary;
+        text-align: center;
+        span {
+            font-size: $font-m;
+        }
+    }
+}
+.skills-list {
+    width: 250px;
+    margin: 0 auto;
+    border-left: 2px solid $border-bottom-secondary;
+    li {
+        font-size: $font-m;
+        color: $text-color-primary;
+        margin-left: 24px;
+        margin-bottom: 20px;
+    }
+}
+
+/* work */
+.work-list {
+    margin-top: 16px;
+    margin-left: 14px;
+    border-left: 2px solid $border-left-primary;
+    li {
+        margin-left: 24px;
+    }
+    h3 {
+        font-size: $font-m;
+    }
+    img {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    p {
+        font-size: $font-s;
+        margin-right: 510px;
+        line-height: 1.5;
+    }
+}
+.work-list-h3 {
+    margin-top: 32px;
+}
+
+/* footer */
+.footer {
+    background-color: $bgc-primary;
+    font-family: "Kumbh Sans", sans-serif;
+    margin-top: 76px;
+    h2 {
+        font-size: $font-l;
+        color: $text-color-primary;
+        margin: 0 auto;
+        padding-top: 24px;
+        padding-bottom: 16px;
+        border-bottom: 2px solid $border-bottom-secondary;
+        text-align: center;
+    }
+    ul {
+        margin-top: 32px;
+        li {
+            font-size: $font-m;
+            color: $text-color-primary;
+            text-align: center;
+            font-weight: 300;
+            & ~ li {
+                margin-top: 16px;
+            }
+        }
+    }
+}
+.footer-icon {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 48px;
+    margin-top: 20px;
+    a ~ a {
+        margin-left: 24px;
+    }
+}
