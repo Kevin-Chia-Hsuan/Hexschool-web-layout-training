@@ -699,7 +699,7 @@ img {
   }
 }
 
-.classic h4 {
+.classic > h4 {
   text-align: center;
   font-size: 48px;
   color: #650300;
@@ -708,7 +708,7 @@ img {
 }
 
 @media only screen and (max-width: 1110px) {
-  .classic h4 {
+  .classic > h4 {
     font-size: 32px;
     line-height: 45px;
     padding-top: 40px;
@@ -717,7 +717,7 @@ img {
 }
 
 @media only screen and (max-width: 767px) {
-  .classic h4 {
+  .classic > h4 {
     font-size: 24px;
     line-height: 33px;
     padding-top: 32px;

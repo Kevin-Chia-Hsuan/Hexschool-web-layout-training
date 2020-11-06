@@ -127,7 +127,7 @@
     @include mobile {
         padding-bottom: 32px;
     }
-    h4 {
+    > h4 {
         text-align: center;
         font-size: $text-xl;
         color: $text-color-primary;
