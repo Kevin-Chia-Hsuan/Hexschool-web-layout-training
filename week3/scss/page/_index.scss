@@ -70,11 +70,12 @@
 .about-list {
     display: flex;
     justify-content: space-around;
+    align-items: baseline; //若小方塊不等高，則會依容器的基準線對齊
     @include pc-pad {
         flex-wrap: wrap;
     }
     li {
-        width: 208px;
+        width: 19%;
         text-align: center;
         @include pc-pad {
             width:40%;
@@ -98,10 +99,10 @@
         }
         img {
             margin: 0 auto;
-            @include size(100px,100px);
-            @include pc-pad {
-                @include size(80px,80px);
-            }
+            // @include size(100px,100px);
+            // @include pc-pad {
+            //     @include size(80px,80px);
+            // }
         }
         h6 {
             font-size: $text-base;
@@ -226,7 +227,7 @@
             display: block;
         }
     }
-    p {
+    h4 {
         font-family: 'Roboto', sans-serif;
         font-size: $text-xl;
         font-weight: 900;
@@ -276,7 +277,8 @@
         flex-wrap: wrap;
     }
     li {
-        @include size(540px,472px);
+        width: 49%;
+        height: 472px;
         background-size: cover;
         background-position: center center;
         display: flex;
@@ -297,10 +299,12 @@
             }
         }
         @include pc-pad {
-            @include size(330px,280px);
+            width: 48%;
+            height: 280px;
         }
         @include mobile {
-            @include size(345px,284px);
+            width: 100%;
+            height: 284px;
             & ~ li {
                 margin-top: 16px;
             }
