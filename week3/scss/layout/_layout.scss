@@ -1,0 +1,246 @@
+/* container區塊 */
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    @include pc-pad {
+        max-width: 690px;
+    }
+    @include mobile {
+        max-width: 345px;
+    }
+}
+
+
+/* navbar區塊 */
+.navbar {
+    background-color: #AA0601;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include pc-pad {
+        padding-right: 39px;
+        padding-left: 39px;
+    }
+    @include mobile {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    h1 {
+        @include mobile {
+            margin: 0 auto;
+            padding: 10px 0;
+        }
+    }
+}
+.logo a {
+    display: block;
+    @include size(80px,49px);
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/logo.png);
+    @include background-type;
+    @include mobile {
+        @include size(46px,27px);
+        background-size: contain;
+    }
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include mobile {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    li {
+        margin-left: 64px;
+        @include pc-pad {
+            margin-left: 40px;
+        }
+        @include mobile {
+            width: 50%;
+            margin: 0;
+        }
+        a {
+            display: block;
+            color: $text-color-secondary;
+            text-decoration: none;
+            font-size: $text-sm;
+            line-height: 28px;
+            &:hover {
+                color: $text-hover-color-primary;
+            }
+            @include mobile {
+                text-align: center;
+                padding: 8px 0;
+                border: solid 1px #fff;
+            }
+        }
+    }
+}
+
+/* footer區塊 */
+.footer {
+    background-color: $footer-bg-color;
+}
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    @include mobile {
+        padding-top: 23px;
+    }
+}
+.footer-nav {
+    display: flex;
+    @include mobile {
+        display: none;
+    }
+    li {
+        & ~ li {
+            margin-left: 48px;
+        }
+        a {
+            color: $text-color-secondary;
+            text-decoration: none;
+            font-size: $text-s;
+            line-height: 22px;
+            display: block;
+            padding-top: 48px;
+            padding-bottom: 36px;
+            @include pc-pad {
+                padding-top: 40px;
+                padding-bottom: 26px;
+            }
+            &:hover {
+                color: $text-hover-color-primary;
+            }
+        }
+    }
+}
+.footer-icon {
+    display: flex;
+    margin-top: 36px;
+    @include pc-pad {
+        margin-top: 40px;
+    }
+    @include mobile {
+        margin-top: 0;
+    }
+    li {
+        @include pc-pad {
+            @include size(24px,24px);
+        }
+        & ~ li {
+            margin-left: 32px;
+        }
+        @include mobile {
+            & ~ li {
+                margin-left: 24px;
+            }
+        }
+        a {
+            transition: .5s;
+            display: block;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+.footer-contact {
+    li {
+        display: flex;
+        align-items: center;
+        padding-bottom: 20px;
+        img {
+            @include size(44px,44px);
+            @include pc-pad {
+                @include size(24px,24px);
+            }
+            @include mobile {
+                @include size(20px,20px);
+            }
+            margin-right: 17px;
+        }
+        h5 {
+            font-size: $text-lg;
+            @include pc-pad {
+                font-size: $text-sm;
+            }
+            @include mobile {
+                font-size: $text-s;
+            }
+            color: $text-color-secondary;
+        }
+    }
+}
+.footer-copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid 1px $text-color-secondary;
+    padding: 40px 0;
+    @include pc-pad {
+        .logo {
+            display: none;
+        }
+    }
+    @include mobile {
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        padding-top: 18px;
+        padding-bottom: 25px;
+        .logo {
+            display: block;
+        }
+    }
+}
+.copyright {
+    width: 992px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include mobile {
+        width: 90%;
+    }
+    p {
+        font-size: $text-s;
+        color: $text-color-secondary;
+        line-height: 21px;
+        @include mobile {
+            font-size: $text-xs;
+        }
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        @include mobile {
+            flex-wrap: wrap;
+        }
+        li {
+            &:last-of-type {
+                margin-left: 62px;
+            }
+        @include pc-pad {
+            &:last-of-type {
+                margin-left: 24px;
+                }
+        }
+        @include mobile {
+            margin-top: 7px;
+            width: 100%;
+            &:last-of-type {
+                margin-left: 0;
+                }
+        }
+        }
+        a {
+            display: block;
+            font-size: $text-xs;
+            color: $text-color-secondary;
+            line-height: 20px;
+            text-decoration: none;
+            &:hover {
+                color: $text-hover-color-primary;
+            }
+        }
+    }
+}
