@@ -1216,8 +1216,8 @@ img {
   background-color: #580603;
 }
 
-/* store-banne區塊 */
-.store-banner {
+/* location-banne區塊 */
+.location-banner {
   background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/qa.png);
   background-size: cover;
   background-position: center center;
@@ -1225,18 +1225,18 @@ img {
 }
 
 @media only screen and (max-width: 1110px) {
-  .store-banner {
+  .location-banner {
     background-position: 30% center;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  .store-banner {
+  .location-banner {
     height: 143px;
   }
 }
 
-.store-banner .container {
+.location-banner .container {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1246,7 +1246,7 @@ img {
           align-items: flex-end;
 }
 
-.store-banner .container .store-banner-list {
+.location-banner .container .location-banner-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1255,7 +1255,7 @@ img {
           align-items: center;
 }
 
-.store-banner .container .store-banner-list h3 {
+.location-banner .container .location-banner-list h3 {
   font-size: 64px;
   line-height: 90px;
   font-weight: bold;
@@ -1263,7 +1263,7 @@ img {
 }
 
 @media only screen and (max-width: 1110px) {
-  .store-banner .container .store-banner-list h3 {
+  .location-banner .container .location-banner-list h3 {
     font-size: 48px;
     line-height: 67px;
     margin-right: 16px;
@@ -1271,7 +1271,7 @@ img {
 }
 
 @media only screen and (max-width: 767px) {
-  .store-banner .container .store-banner-list h3 {
+  .location-banner .container .location-banner-list h3 {
     font-size: 28px;
     line-height: 40px;
     margin-right: 8px;
@@ -1279,31 +1279,31 @@ img {
 }
 
 @media only screen and (max-width: 1110px) {
-  .store-banner .container .store-banner-list img {
+  .location-banner .container .location-banner-list img {
     width: 30.5px;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  .store-banner .container .store-banner-list img {
+  .location-banner .container .location-banner-list img {
     width: 16.5px;
   }
 }
 
-/* store區塊 */
-.store {
+/* location區塊 */
+.location {
   margin-top: 16px;
   margin-bottom: 304px;
 }
 
 @media only screen and (max-width: 1110px) {
-  .store {
+  .location {
     margin-bottom: 104px;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  .store {
+  .location {
     margin-bottom: 56px;
   }
 }
@@ -1352,7 +1352,7 @@ img {
   }
 }
 
-.store-list {
+.location-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1364,42 +1364,42 @@ img {
   /* 解決最後一排兩個被推到兩邊的問題 */
 }
 
-.store-list::after {
+.location-list::after {
   content: "";
   width: 32.3333%;
 }
 
-.store-list li {
+.location-list li {
   width: 32.3333%;
   margin-top: 32px;
 }
 
 @media only screen and (max-width: 1110px) {
-  .store-list li {
+  .location-list li {
     width: 48%;
     margin-top: 24px;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  .store-list li {
+  .location-list li {
     width: 100%;
   }
 }
 
-.store-list li > img {
+.location-list li > img {
   width: 100%;
   height: 224px;
 }
 
-.store-list li h6 {
+.location-list li h6 {
   font-size: 24px;
   line-height: 36px;
   padding: 12px 0px 12px 24px;
   border: 1px solid #00000020;
 }
 
-.store-list li a {
+.location-list li a {
   display: block;
   font-size: 19px;
   line-height: 26px;
@@ -1410,16 +1410,16 @@ img {
   padding: 20px 0;
 }
 
-.store-list li a:hover {
+.location-list li a:hover {
   color: #ffeaa7;
 }
 
-.store-info {
+.location-info {
   border: 1px solid #00000020;
   padding: 8px 24px 16px;
 }
 
-.store-info .tel, .store-info .hours, .store-info .addr {
+.location-info .tel, .location-info .hours, .location-info .addr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1429,13 +1429,13 @@ img {
 }
 
 @media only screen and (max-width: 1110px) {
-  .store-info .tel, .store-info .hours, .store-info .addr {
+  .location-info .tel, .location-info .hours, .location-info .addr {
     font-size: 14px;
     line-height: 21px;
   }
 }
 
-.store-info p {
+.location-info p {
   margin-left: 12px;
 }
 /*# sourceMappingURL=all.css.map */

@@ -1,5 +1,5 @@
-/* store-banne區塊 */
-.store-banner {
+/* location-banne區塊 */
+.location-banner {
     background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/qa.png);
     background-size: cover;
     background-position: center center;
@@ -14,7 +14,7 @@
         height: 100%;
         display: flex;
         align-items: flex-end;
-        .store-banner-list {
+        .location-banner-list {
             display: flex;
             align-items: center;
             h3 {
@@ -45,8 +45,8 @@
         }
     }
 
-    /* store區塊 */
-    .store {
+    /* location區塊 */
+    .location {
         margin-top: 16px;
         margin-bottom: 304px;
         @include pc-pad {
@@ -84,7 +84,7 @@
             }
         }
     }
-    .store-list {
+    .location-list {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -128,7 +128,7 @@
             }
         }
     }
-    .store-info {
+    .location-info {
         border: 1px solid #00000020;
         padding: 8px 24px 16px;
         .tel,.hours,.addr {
