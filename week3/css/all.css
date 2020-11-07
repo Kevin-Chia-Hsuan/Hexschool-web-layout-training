@@ -1215,4 +1215,227 @@ img {
 .btn-list button:hover {
   background-color: #580603;
 }
+
+/* store-banne區塊 */
+.store-banner {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/qa.png);
+  background-size: cover;
+  background-position: center center;
+  height: 304px;
+}
+
+@media only screen and (max-width: 1110px) {
+  .store-banner {
+    background-position: 30% center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .store-banner {
+    height: 143px;
+  }
+}
+
+.store-banner .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.store-banner .container .store-banner-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.store-banner .container .store-banner-list h3 {
+  font-size: 64px;
+  line-height: 90px;
+  font-weight: bold;
+  margin-right: 24px;
+}
+
+@media only screen and (max-width: 1110px) {
+  .store-banner .container .store-banner-list h3 {
+    font-size: 48px;
+    line-height: 67px;
+    margin-right: 16px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .store-banner .container .store-banner-list h3 {
+    font-size: 28px;
+    line-height: 40px;
+    margin-right: 8px;
+  }
+}
+
+@media only screen and (max-width: 1110px) {
+  .store-banner .container .store-banner-list img {
+    width: 30.5px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .store-banner .container .store-banner-list img {
+    width: 16.5px;
+  }
+}
+
+/* store區塊 */
+.store {
+  margin-top: 16px;
+  margin-bottom: 304px;
+}
+
+@media only screen and (max-width: 1110px) {
+  .store {
+    margin-bottom: 104px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .store {
+    margin-bottom: 56px;
+  }
+}
+
+.sotre-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sotre-form label {
+  font-size: 24px;
+  line-height: 33px;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 1110px) {
+  .sotre-form label {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .sotre-form label {
+    font-size: 14px;
+    line-height: 20px;
+    margin-right: 12px;
+  }
+}
+
+.sotre-form select {
+  width: 30%;
+  height: 45px;
+  background-color: transparent;
+  border-color: transparent;
+  border: 1px solid #CED4DA;
+}
+
+@media only screen and (max-width: 767px) {
+  .sotre-form select {
+    width: 80%;
+  }
+}
+
+.store-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* 解決最後一排兩個被推到兩邊的問題 */
+}
+
+.store-list::after {
+  content: "";
+  width: 32.3333%;
+}
+
+.store-list li {
+  width: 32.3333%;
+  margin-top: 32px;
+}
+
+@media only screen and (max-width: 1110px) {
+  .store-list li {
+    width: 48%;
+    margin-top: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .store-list li {
+    width: 100%;
+  }
+}
+
+.store-list li > img {
+  width: 100%;
+  height: 224px;
+}
+
+.store-list li h6 {
+  font-size: 24px;
+  line-height: 36px;
+  padding: 12px 0px 12px 24px;
+  border: 1px solid #00000020;
+}
+
+.store-list li a {
+  display: block;
+  font-size: 19px;
+  line-height: 26px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.store-list li a:hover {
+  color: #ffeaa7;
+}
+
+.store-info {
+  border: 1px solid #00000020;
+  padding: 8px 24px 16px;
+}
+
+.store-info .tel, .store-info .hours, .store-info .addr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  line-height: 30px;
+  padding-top: 8px;
+}
+
+@media only screen and (max-width: 1110px) {
+  .store-info .tel, .store-info .hours, .store-info .addr {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.store-info p {
+  margin-left: 12px;
+}
 /*# sourceMappingURL=all.css.map */
