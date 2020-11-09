@@ -1,0 +1,147 @@
+/* location-banne區塊 */
+.location-banner {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/qa.png);
+    background-size: cover;
+    background-position: center center;
+    height: 304px;
+    @include pc-pad {
+        background-position: 30% center;
+    }
+    @include mobile {
+        height: 143px;
+    }
+    .container {
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        .location-banner-list {
+            display: flex;
+            align-items: center;
+            h3 {
+                font-size: $text-2xl;
+                line-height: 90px;
+                font-weight: bold;
+                margin-right: 24px;
+                @include pc-pad {
+                    font-size: $text-xl;
+                    line-height: 67px;
+                    margin-right: 16px;
+                    }
+                @include mobile {
+                    font-size: 28px;
+                    line-height: 40px;
+                    margin-right: 8px;
+                    }
+                }
+            img {
+                @include pc-pad {
+                    width: 30.5px;
+                    }
+                @include mobile {
+                    width: 16.5px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* location區塊 */
+    .location {
+        margin-top: 16px;
+        margin-bottom: 304px;
+        @include pc-pad {
+            margin-bottom: 104px;
+        }
+        @include mobile {
+            margin-bottom: 56px;
+        }
+    }
+    .sotre-form {
+        display: flex;
+        align-items: center;
+        label{
+            font-size: $text-base;
+            line-height: 33px;
+            margin-right: 20px;
+            @include pc-pad {
+                font-size: $text-s;
+                line-height: 22px;
+            }
+            @include mobile {
+                font-size: $text-xs;
+                line-height: 20px;
+                margin-right: 12px;
+            }
+        }
+        select {
+            width: 30%;
+            height: 45px;
+            background-color:transparent;
+            border-color:transparent;
+            border: 1px solid #CED4DA;
+            @include mobile {
+                width: 80%;
+            }
+        }
+    }
+    .location-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        /* 解決最後一排兩個被推到兩邊的問題 */
+        &::after {
+            content: "";
+            width: 32.3333%;
+        }
+        li {
+            width: 32.3333%;
+            margin-top: 32px;
+            @include pc-pad {
+                width: 48%;
+                margin-top: 24px;
+            }
+            @include mobile {
+                width: 100%;
+            }
+            > img {
+                width: 100%;
+                height: 224px;
+            }
+            h6 {
+                font-size: $text-base;
+                line-height: 36px;
+                padding: 12px 0px 12px 24px;
+                border: 1px solid #00000020;
+            }
+            a {
+                display: block;
+                font-size: 19px;
+                line-height: 26px;
+                text-align: center;
+                text-decoration: none;
+                background-color: #000;
+                color: $text-color-secondary;
+                padding: 20px 0;
+                &:hover {
+                    color: $text-hover-color-primary;
+                }
+            }
+        }
+    }
+    .location-info {
+        border: 1px solid #00000020;
+        padding: 8px 24px 16px;
+        .tel,.hours,.addr {
+            display: flex;
+            font-size: $text-sm;
+            line-height: 30px;
+            padding-top: 8px;
+            @include pc-pad {
+                font-size: $text-xs;
+                line-height: 21px;
+            }
+        }
+        p {
+            margin-left: 12px;
+        }
+    }

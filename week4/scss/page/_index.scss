@@ -1,0 +1,478 @@
+/* banner區塊 */
+.banner {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png);
+    background-size: cover;
+    background-position: center center;
+    height: 840px;
+    @include mobile {
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-sm.png);
+        height: 394px;
+    }
+}
+.slogan {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $text-color-primary;
+    font-weight: bold;
+    text-align: right;
+    h5 {
+        font-size: $text-lg;
+        line-height: 50px;
+        @include pc-pad {
+            font-size: $text-sm;
+            line-height: 28px;
+        }
+        @include mobile {
+            font-size: $text-s;
+            line-height: 22px;
+        }
+    }
+    h3 {
+        font-size: $text-2xl;
+        line-height: 90px;
+        @include pc-pad {
+            font-size: $text-xl;
+            line-height: 67px;
+        }
+        @include mobile {
+            font-size: $text-m;
+            line-height: 45px;
+        }
+    }
+}
+
+/* about區塊 */
+.about {
+    padding-bottom: 80px;
+    @include pc-pad {
+        padding-bottom: 26px;
+    }
+    @include mobile {
+        padding-bottom: 12px;
+    }
+    background-color: $about-bg-color;
+    h4 {
+        text-align: center;
+        font-size: $text-xl;
+        line-height: 67px;
+        color: $text-color-primary;
+        font-weight: bold;
+        @include pc-pad {
+            @include pc-pad-h4;
+        }
+        @include mobile {
+            @include mobile-h4;
+        }
+    }
+}
+.about-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline; //若小方塊不等高，則會依容器的基準線對齊
+    @include pc-pad {
+        flex-wrap: wrap;
+    }
+    li {
+        width: 19%;
+        text-align: center;
+        @include pc-pad {
+            width:40%;
+            margin-bottom: 78px;
+            &:nth-child(1){
+                order: 3;
+            }
+            &:nth-child(2){
+                order: 1;
+            }
+            &:nth-child(3){
+                order: 2;
+            }
+            &:nth-child(4){
+                order: 4;
+            }
+        }
+        @include mobile {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        img {
+            margin: 0 auto;
+            // @include size(100px,100px);
+            // @include pc-pad {
+            //     @include size(80px,80px);
+            // }
+        }
+        h6 {
+            font-size: $text-base;
+            color: $text-color-primary;
+            font-weight: bold;
+            line-height: 33px;
+            margin-top: 40px;
+            @include mobile {
+                margin-top: 16px;
+            }
+        }
+        p {
+            text-align-last: left;
+            line-height: 24px;
+            margin-top: 4px;
+        }
+    }
+}
+
+.classic {
+    padding-bottom: 80px;
+    @include mobile {
+        padding-bottom: 32px;
+    }
+    > h4 {
+        text-align: center;
+        font-size: $text-xl;
+        color: $text-color-primary;
+        font-weight: bold;
+        line-height: 67px;
+        @include pc-pad {
+            @include pc-pad-h4;
+        }
+        @include mobile {
+            @include mobile-h4;
+        }
+    }
+}
+/* classic區塊 */
+.classic-list {
+    display: flex;
+    @include mobile {
+        display: block;
+        position: relative;
+    }
+    &:nth-child(odd){
+        flex-direction: row-reverse;
+    }
+    &:nth-child(even) {
+        .classic-list-content:nth-child(even){
+            margin-left: 30px;
+        }
+    }
+    &:nth-child(odd) {
+        .classic-list-content:nth-child(even){
+            margin-right: 30px;
+        }
+    }
+    & ~ .classic-list {
+        margin-top: 30px;
+    }
+    .photo {
+        width: 635px;
+    }
+    @include pc-pad {
+        &:nth-child(odd){
+            flex-direction: row;
+        }
+        &:nth-child(odd) {
+            .classic-list-content:nth-child(even){
+                margin-left: 30px;
+            }
+        }
+        &:nth-child(odd) {
+            .classic-list-content:nth-child(even){
+                margin-right: 0px;
+            }
+        }
+        & ~ .classic-list {
+            margin-top: 8px;
+        }
+        .photo {
+            @include size(390px,168px);
+        }
+    }
+    @include mobile {
+        &:nth-child(even) {
+            .classic-list-content:nth-child(even){
+                margin: 0;
+            }
+        }
+        &:nth-child(odd) {
+            .classic-list-content:nth-child(even){
+                margin: 0;
+            }
+        }
+        &:nth-child(odd) {
+        .classic-list-content:nth-child(even){
+            margin-right: 30px;
+        }
+    }
+        .photo {
+            width: 345px;
+        }
+    }
+}
+.classic-list-content {
+    display: flex;
+    align-items: center;
+    .white {
+        display: none;
+    }
+    @include mobile {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .red {
+            display: none;
+        }
+        .white {
+            display: block;
+        }
+    }
+    h4 {
+        font-family: 'Roboto', sans-serif;
+        font-size: $text-xl;
+        font-weight: 900;
+        color: $text-color-Tertiary;
+        margin-left: 8px;
+        @include pc-pad {
+            font-size: 28px;
+        }
+        @include mobile {
+            font-size: 28px;
+            color: $text-color-secondary;
+        }
+    }
+}
+
+/* co-branding區塊 */
+.co-branding {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/bg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    @include size(100%,743px);
+    @include pc-pad {
+        @include size(100%,437px);
+    }
+    @include mobile {
+        @include size(100%,696px);
+    }
+    h4 {
+        text-align: center;
+        font-size: $text-xl;
+        color: $text-color-secondary;
+        font-weight: bold;
+        line-height: 67px;
+        @include pc-pad {
+            @include pc-pad-h4;
+        }
+        @include mobile {
+            @include mobile-h4;
+        }
+    }
+}
+.co-branding-list {
+    display: flex;
+    justify-content: space-between;
+    @include mobile {
+        flex-wrap: wrap;
+    }
+    li {
+        width: 49%;
+        height: 472px;
+        background-size: cover;
+        background-position: center center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2 {
+            font-size: $text-3xl;
+            font-weight: 900;
+            color: $text-color-Tertiary;
+            line-height: 95px;
+            @include pc-pad {
+                font-size: $text-m;
+                line-height: 43px;
+            }
+            @include mobile {
+                font-size: $text-m;
+                line-height: 25px;
+            }
+        }
+        @include pc-pad {
+            width: 48%;
+            height: 280px;
+        }
+        @include mobile {
+            width: 100%;
+            height: 284px;
+            & ~ li {
+                margin-top: 16px;
+            }
+        }
+    }
+    .co-branding-double {
+        // 透明度 0.5 的白色半透明遮罩
+        background-color: rgba(255, 255, 255, .5);
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-8.png);
+        // 設置背景混和模式為相乘模式
+        background-blend-mode: screen;
+    }
+    .co-branding-youth {
+        // 透明度 0.5 的白色半透明遮罩
+        background-color: rgba(255, 255, 255, .5);
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-9.png);
+        // 設置背景混和模式為相乘模式
+        background-blend-mode: screen;
+    }
+}
+
+/* recommend區塊 */
+.recommend {
+    padding-bottom: 64px;
+    @include pc-pad {
+        padding-bottom: 13px;
+    }
+    h4 {
+        text-align: center;
+        font-size: $text-xl;
+        color: $text-color-primary;
+        font-weight: bold;
+        line-height: 67px;
+        @include pc-pad {
+            @include pc-pad-h4;
+        }
+        @include mobile {
+            @include mobile-h4;
+        }
+    }
+}
+.recommend-list {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    @include pc-pad {
+        flex-wrap: wrap;
+    }
+    li {
+        border: 1px solid #DEE2E6;
+        width: 255px;
+        @include pc-pad {
+            width: 47%;
+            margin-bottom: 28px;
+        }
+        @include mobile {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .recommend-list-title {
+        font-size: $text-xs;
+        font-weight: 500;
+        line-height: 19px;
+        padding-top: 14px;
+        padding-bottom: 7px;
+    }
+    .recommend-list-content {
+        font-weight: 400;
+        line-height: 24px;
+    }
+    .recommend-list-time {
+        font-size: $text-xs;
+        font-weight: 400;
+        line-height: 19px;
+        color: #707070;
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+}
+
+/* contact區塊 */
+.contact {
+    background-color: $contact-bg-color;
+}
+.contact-info {
+    width: 35%;
+    margin: 0 auto;
+    @include pc-pad {
+        width: 65%;
+    }
+    @include mobile {
+        width: 95%;
+    }
+    h4{
+        text-align: center;
+        font-size: $text-xl;
+        font-weight: bold;
+        line-height: 67px;
+        padding-top: 64px;
+        padding-bottom: 20px;
+        @include pc-pad {
+            @include pc-pad-h4;
+        }
+        @include mobile {
+            @include mobile-h4;
+        }
+    }
+    p {
+        font-size: $text-sm;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    input,textarea {
+        padding: 14px 16px;
+        margin-top: 4px;
+        border: solid 1px #000;
+        //顏色透明
+        background-color: #ffffff00;
+    }
+    input {
+        height: 50px;
+    }
+    textarea {
+        height: 136px;
+        resize: none;
+    }
+}
+.checkbox-group {
+    display: flex;
+    justify-content: center;
+    input {
+        @include size(22px,22px);
+        margin-right: 4px;
+        vertical-align: middle;
+    }
+    label {
+        font-size: $text-s;
+        line-height: 22px;
+    }
+}
+.btn-list {
+    text-align: center;
+    padding-top: 42px;
+    padding-bottom: 80px;
+    button {
+        font-size: $text-s;
+        @include size(350px,54px);
+        @include pc-pad {
+            @include size(210px,36px);
+        }
+        @include mobile {
+            @include size(165px,36px);
+        }
+        line-height: 22px;
+        color: $text-color-secondary;
+        background-color: $btn-color-primary;
+        border: none;
+        cursor: pointer;
+        &:hover {
+            background-color: $btnhover-color-primary;
+        }
+    }
+}

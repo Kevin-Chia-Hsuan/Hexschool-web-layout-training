@@ -1,0 +1,232 @@
+/* glasses-header區塊 */ 
+.glasses-header-container {
+    max-width: 1386px;
+    margin: 0 auto;
+    @include pc-pad {
+        width: 100%;
+    }
+}
+.glasses-header-list {
+    display: flex;
+    justify-content: center;
+    li {
+        width: 33.3333%;
+        border: 1px solid #DCDCDC;
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            //原本是pt24、pb24，但因為先預留16px的透明border-bottom，所以變成pb8
+            padding: 24px 0 8px;
+            font-size: 42px;
+            line-height: 55px;
+            color: $text-color-default;
+            font-weight: bold;
+            //先預留16px的透明border-bottom，不然hover後會有畫面跳動的問題
+            border-bottom: 16px solid transparent;
+            &:hover {
+                border-bottom: 16px solid $btn-color-primary;
+            }
+            img {
+                margin-right: 8px;
+            }
+            @include pc-pad {
+                padding: 16px 0 8px;
+                font-size: 28px;
+                line-height: 37px;
+                border-bottom: 8px solid transparent;
+                &:hover {
+                    border-bottom: 8px solid $btn-color-primary;
+                }
+                img {
+                    @include size(32px,32px)
+                }
+            }
+            @include mobile {
+                padding: 8px 0 4px;
+                font-size: $text-xs;
+                line-height: 19px;
+                border-bottom: 4px solid transparent;
+                &:hover {
+                    border-bottom: 4px solid $btn-color-primary;
+                }
+                img {
+                    @include size(15px,15px);
+                    margin-right: 4px;
+                }
+            }
+            @include mobile-s {
+                img {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+/* glasses-banner區塊 */
+.glasses-banner {
+    ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+            width: 49%;
+            @include pc-pad {
+                width: 50%;
+            }
+            &:first-child {
+                background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-3.png);
+                @include background-type;
+                background-size: cover;
+                background-position: center center;
+                height: 309px;
+                @include mobile {
+                    height: 145px;
+                }
+            }
+            &:last-child {
+                background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-2-color.png);
+                @include background-type;
+                background-size: cover;
+                background-position: center center;
+                height: 309px;
+                @include mobile {
+                    height: 145px;
+                }
+            }
+        }
+    }
+}
+
+/* glasses-product區塊 */
+.glasses-product {
+    padding-top: 88px;
+    padding-bottom: 192px;
+    text-align: center;
+    @include pc-pad {
+        padding-top: 40px;
+        padding-bottom: 104px;
+    }
+    @include pc-pad {
+        padding-top: 30px;
+        padding-bottom: 56px;
+    }
+    h4 {
+        font-size: 42px;
+        line-height: 63px;
+        font-weight: 500;
+        @include pc-pad {
+            font-size: $text-m;
+            line-height: 43px;
+        }
+        @include mobile {
+            font-size: $text-sm;
+            line-height: 26px;
+        }
+    }
+    h5 {
+        font-size: 32px;
+        line-height: 48px;
+        font-weight: 500;
+        @include pc-pad {
+            font-size: $text-base;
+            line-height: 33px;
+        }
+        @include mobile {
+            font-size: $text-s;
+            line-height: 22px;
+        }
+    }
+}
+.glasses-product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+    @include pc-pad {
+        margin-top: 32px;
+    }
+    @include mobile {
+        margin-top: 20px;
+    }
+    li {
+        text-align-last: left;
+        width: 32.3333%;
+        margin-bottom: 112px;
+        @include pc-pad {
+            width: 48%;
+            margin-bottom: 72px;
+        }
+        @include mobile {
+            width: 100%;
+            margin-bottom: 32px;
+        }
+        img {
+            @include size(350px,224px);
+        }
+        .glasses-product-list-info {
+            display: flex;
+            flex-direction: column;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 700;
+            @include pc-pad {
+                flex-direction: row;
+                justify-content: space-between;
+                font-size: $text-base;
+                line-height: 32px;
+            }
+            @include pc-pad {
+                font-size: $text-s;
+                line-height: 21px;
+            }
+            p {
+                color: $text-color-Tertiary;
+            }
+        }
+        .square {
+            display: inline-block;
+            @include size(19px,19px);
+            border-radius: 4px;
+            background-color: $square-color-primary;
+            margin-top: 11px;
+            &:last-of-type {
+                background-color: $square-color-secondary;
+            }
+            a {
+                display: block;
+                opacity: 0;
+            }
+        }
+    }
+}
+.glasses-tab {
+    display: none;
+    justify-content: center;
+    @include pc-pad {
+        display: flex;
+        margin-top: 32px;
+    }
+    @include pc-pad {
+        margin-top: 8px;
+    }
+    li {
+        border: 1px solid #555555;
+        a {
+            display: block;
+            text-decoration: none;
+            padding: 17px;
+            font-size: 19px;
+            color: #555555;
+            &:hover {
+                background-color: #000;
+                color: $text-color-secondary;
+            }
+            @include mobile {
+                font-size: 12px;
+                padding: 8px;
+            }
+        }
+    }
+}

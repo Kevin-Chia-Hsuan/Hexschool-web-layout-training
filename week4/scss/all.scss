@@ -1,0 +1,16 @@
+// scss變數檔案
+@import "variable";
+//css reset
+@import "reset";
+//全站設定
+@import "base";
+//mixin
+@import "mixin";
+//layout css
+@import "layout/layout";
+//index css
+@import "page/index";
+//location css
+@import "page/location";
+//store css
+@import "page/glasses";
