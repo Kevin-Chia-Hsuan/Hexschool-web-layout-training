@@ -1,0 +1,135 @@
+.navbar {
+    .add {
+        a {
+            text-decoration: none;
+            font-size: $font-size-base;
+            line-height: 24px;
+            font-weight: bold;
+            &:hover {
+                color: $text-success;
+            }
+        }
+        .angle-add {
+            vertical-align: middle;//讓文字與icon水平置中
+            color: $icon-primary;
+            margin-right: 8px;
+        }
+    }
+}
+.table {
+    th, td {
+        vertical-align: middle;
+    }
+    .text-end {
+        a {
+            vertical-align: middle;//讓文字與icon水平置中
+            color: $text-primary;
+            &:last-of-type {
+                margin-left: 25px;
+            }
+        }
+        text-align: right;
+    }
+}
+.addModal {
+    .modal-header {
+        h4 {
+            font-size: $h4-font-size;
+            line-height: 29px;
+            font-weight: bold;
+        }
+    }
+    .modal-body {
+        label {
+            font-size: $font-size-sm;
+            margin-bottom: 4px;
+        }
+        h5 {
+            font-size: $h5-font-size;
+            line-height: 24px;
+            font-weight: bold;
+            margin-bottom: 18px;
+        }
+    }
+    .form-group input {
+        background-color: #edf4ee;
+    }
+    .verification-deactivate {
+        .vd-info {
+            padding: 0;
+            margin: 0 0 18px 0;
+            li {
+                list-style: none;
+                .verification-icon {
+                    color: $icon-primary;
+                    margin-right: 8px;
+                }
+                .deactivate-icon {
+                    color: $icon-secondary;
+                    margin-right: 8px;
+                }
+                .deactivate-danger {
+                    color: $icon-secondary;
+                }
+            }
+        }
+        .btn-outline-success {
+            border-color: #CDDDCD;
+            color: #CDDDCD;
+        }
+    }
+    .modal-select {
+        padding: 10px;
+    }
+    .modal-check {
+        .form-check {
+            margin: 20px 0;
+            line-height: 24px;
+            label {
+                font-size: $h6-font-size;
+            }
+        }
+    }
+}
+.viewModalCenter {
+    .modal-body {
+        padding: 32px 0;
+    }
+}
+.mainInfo {
+    .profileImg {
+        @include size(140px,140px);
+    }
+    .profileInfo-list {
+        width: 300px;
+        .tag,.role {
+            font-size: $h6-font-size;
+            line-height: 19px;
+        }
+        .tag {
+            margin-bottom: 8px;
+        }
+        .name {
+            font-size: $h4-font-size;
+            line-height: 29px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .email {
+            font-size: $font-size-sm;
+            line-height: 17px;
+            color: $text-secondary;
+        }
+    }
+    .close {
+        height: 30px;
+    }
+    .profileTool {
+        margin-top: 20px;
+        .important {
+            background-color: $bg-primary;
+            color: $text-primary;
+            padding: 4px 8px;
+        }
+    }
+}

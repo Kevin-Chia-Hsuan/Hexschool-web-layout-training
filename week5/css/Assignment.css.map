@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEQ,OAFD,CACH,EAAE,CACE,EAAE,CAAC;EACC,SAAS,EAAE,YAAY;EACvB,WAAW,EAAE,IAAI;EACjB,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;CACrB;;AAPT,AAQQ,OARD,CACH,EAAE,CAOE,EAAE,CAAC;EACC,SAAS,EAAE,cAAc;EACzB,WAAW,EAAE,IAAI;EACjB,WAAW,EAAE,IAAI;CACpB;;AAZT,AAaQ,OAbD,CACH,EAAE,CAYE,CAAC,CAAC;EACE,KAAK,EAAE,IAAI;CACd",
+    "sources": [
+        "../scss/pages/assignment.scss"
+    ],
+    "names": [],
+    "file": "assignment.css"
+}

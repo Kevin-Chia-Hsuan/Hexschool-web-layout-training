@@ -1,0 +1,187 @@
+.navbar {
+    padding-top: 32px;
+    padding-bottom: 44px;
+    li {
+        h2 {
+            font-size: $h4-font-size;
+            line-height: 29px;
+            font-weight: bold;
+            margin-right: 46px;
+        }
+        h3 {
+            font-size: $font-size-base;
+            line-height: 24px;
+            font-weight: bold;
+        }
+        a {
+            color: $text-primary;
+            &:first-child {
+                margin-right: 26px;
+            }
+        }
+    }
+}
+
+//下拉箭頭修改顏色共用語法
+.angle-down {
+    vertical-align: middle;//讓文字與icon水平置中
+    color: $icon-primary;
+}
+
+.directoryBox-title {
+    h2 {
+        font-size: $font-size-base;
+        line-height: 19px;
+        font-weight: bold;
+        margin-bottom: 6px;
+    }
+}
+.list-grou {
+    li {
+        &:first-of-type {
+            background-color: $bg-primary;
+        }
+        font-size: $font-size-s;
+        line-height: 15px;
+        cursor: pointer;
+        &:hover {
+            background-color: $bg-primary;
+        }
+        h3 {
+            font-size: $font-size-base;
+            line-height: 19px;
+            font-weight: bold;
+            margin-top: 4px;
+        }
+        h4 {
+            color: $text-secondary;
+            margin-top: 8px;
+        }
+    }
+}
+.messageBox {
+    h2 {
+        font-size: $font-size-base;
+        line-height: 19px;
+        font-weight: bold;
+        margin-bottom: 6px;
+        text-align-last: right;
+        margin-right: 26px;
+    }
+}
+.messageBox-info {
+    border: 1px solid $border-primary;
+    border-radius: 2px 2px 0px 0px;
+    margin-right: 26px;
+}
+.messageBox-list {
+    .messageBox-title {
+        padding: 12px 16px;
+        background-color: $bg-primary;
+        .title-info {
+            p {
+                font-size: $font-size-s;
+                line-height: 15px;
+            }
+            h3 {
+                font-size: $font-size-base;
+                line-height: 19px;
+                font-weight: bold;
+                margin-bottom: 4px;
+            }
+        }
+        .toolbox {
+            a {
+                color: $text-primary;
+                &:hover {
+                    color: $bg-secondary;
+                }
+            }
+        }
+    }
+}
+.message-content {
+    margin-left: 16px;
+    .userRow {
+        .profileInfo {
+            margin-top: 16px;
+            img {
+                @include size(50px,50px);
+                border-radius: 50%;
+                //防止圖片模糊
+                image-rendering: -webkit-optimize-contrast;
+            }
+        }
+        .messageInfo {
+            width: 80%;
+            padding: 16px 0;
+            margin-left: 8px;
+            border-bottom: 1px solid $border-primary;
+            .messageInfo-title {
+                h3 {
+                    font-size: $font-size-base;
+                    line-height: 19px;
+                    font-weight: bold;
+                    margin-top: 4px;
+                }
+                p {
+                    font-size: $font-size-s;
+                    line-height: 15px;
+                    color: $text-secondary;
+                }
+                a {
+                    color: $text-primary;
+                    &:first-of-type {
+                        margin-right: 24px
+                    }
+                }
+            }
+            .messageInfo-content {
+                padding: 16px 0;
+                p {
+                    line-height: 21px;
+                }
+                .important {
+                    background-color: $bg-primary;
+                    color: $text-success;
+                    padding: 0 4px;
+                }
+            }
+            .annexBox {
+                width: 176px;
+                border: 1px solid #CDDDCD;
+                background-color: #EDF4EE;
+                border-radius: 2px;
+                padding: 8px 12px;
+                font-weight: bold;
+                i {
+                    vertical-align: middle;
+                }
+            }
+        }
+        .bordernone {
+            border: none;
+        }
+    }
+}
+.messageTool {
+    margin-top: 16px;
+    margin-right: 26px;
+    a {
+        color: $text-primary;
+        &:first-of-type {
+            margin-right: 30px
+        }
+    }
+    .btn {
+        &:first-of-type {
+            margin-right: 30px
+        }
+    }
+    .btn-success {
+        width: 105px;
+    }
+    .btn-outline-success {
+        width: 157px;
+    }
+}

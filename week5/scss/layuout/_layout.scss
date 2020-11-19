@@ -1,0 +1,55 @@
+.col-3 {
+    background-color: $bg-primary;
+}
+.sidebar {
+    position: relative;
+    height: 100vh;
+    margin-left: 32px;
+}
+.logo {
+    padding-top: 40px;
+    padding-bottom: 42px;
+    a {
+        display: block;
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/085a62fb22df4bf21c605a180648c6c6e35c2b32/week5/logo-ANSWER.svg);
+        @include background-type;
+        background-size: contain;
+        height: 40px;
+    }
+}
+.menu {
+    display: block;
+    li {
+        font-weight: bold;
+        margin-bottom: 29px;
+        a {
+            display: block;
+            text-decoration: none;
+            color: $text-primary;
+            padding-left: 1rem;
+            &:hover {
+                color: $text-success;
+            }
+        }
+    }
+}
+.user {
+    position: absolute;
+    bottom: 32px;
+    img {
+        @include size(40px,40px);
+        border-radius: 50%;
+    }
+    .user-info {
+        margin-left: 16px;
+        h2 {
+            font-weight: bold;
+            line-height: 19px;
+        }
+        p {
+            font-size: $font-size-sm;
+            color: $text-secondary;
+            line-height: 17px;
+        }
+    }
+}
