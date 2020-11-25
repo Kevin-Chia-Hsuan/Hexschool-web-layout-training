@@ -1,23 +1,29 @@
 .navbar {
     padding-top: 32px;
     padding-bottom: 44px;
-    li {
-        h2 {
-            font-size: $h4-font-size;
-            line-height: 29px;
-            font-weight: bold;
-            margin-right: 46px;
-        }
-        h3 {
-            font-size: $font-size-base;
-            line-height: 24px;
-            font-weight: bold;
-        }
-        a {
-            color: $text-primary;
-            &:first-child {
-                margin-right: 26px;
-            }
+    h2 {
+        font-size: $h4-font-size;
+        line-height: 29px;
+        font-weight: bold;
+        margin-right: 46px;
+    }
+    .form-group {
+        margin: 0;
+    }
+    .form-control {
+        font-size: $font-size-base;
+        line-height: 24px;
+        font-weight: bold;
+        border: 0; background: transparent;
+        color: $text-primary;
+        appearance:none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+    }
+    a {
+        color: $text-primary;
+        &:first-child {
+            margin-right: 26px;
         }
     }
 }
@@ -28,12 +34,20 @@
     color: $icon-primary;
 }
 
-.directoryBox-title {
-    h2 {
+.directoryBox {
+    .form-group {
+        margin: 0;
+    }
+    .form-control{
+        width: 20%;
         font-size: $font-size-base;
-        line-height: 19px;
+        line-height: 24px;
         font-weight: bold;
-        margin-bottom: 6px;
+        border: 0; background: transparent;
+        color: $text-primary;
+        appearance:none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
     }
 }
 .list-grou {
@@ -60,6 +74,7 @@
     }
 }
 .messageBox {
+    margin-top: 13px;
     h2 {
         font-size: $font-size-base;
         line-height: 19px;

@@ -2,8 +2,8 @@
     background-color: $bg-primary;
 }
 .sidebar {
-    position: relative;
-    height: 100vh;
+    // height: 100vh;
+    height: 100%;
     margin-left: 32px;
 }
 .logo {
@@ -34,8 +34,6 @@
     }
 }
 .user {
-    position: absolute;
-    bottom: 32px;
     img {
         @include size(40px,40px);
         border-radius: 50%;

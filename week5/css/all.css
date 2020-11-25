@@ -76,8 +76,7 @@ img {
 }
 
 .sidebar {
-  position: relative;
-  height: 100vh;
+  height: 100%;
   margin-left: 32px;
 }
 
@@ -117,11 +116,6 @@ img {
   color: #2A8356;
 }
 
-.user {
-  position: absolute;
-  bottom: 32px;
-}
-
 .user img {
   width: 40px;
   height: 40px;
@@ -148,24 +142,34 @@ img {
   padding-bottom: 44px;
 }
 
-.navbar li h2 {
+.navbar h2 {
   font-size: 1.5rem;
   line-height: 29px;
   font-weight: bold;
   margin-right: 46px;
 }
 
-.navbar li h3 {
+.navbar .form-group {
+  margin: 0;
+}
+
+.navbar .form-control {
   font-size: 1rem;
   line-height: 24px;
   font-weight: bold;
+  border: 0;
+  background: transparent;
+  color: #121212;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
 
-.navbar li a {
+.navbar a {
   color: #121212;
 }
 
-.navbar li a:first-child {
+.navbar a:first-child {
   margin-right: 26px;
 }
 
@@ -174,11 +178,21 @@ img {
   color: #2A8356;
 }
 
-.directoryBox-title h2 {
+.directoryBox .form-group {
+  margin: 0;
+}
+
+.directoryBox .form-control {
+  width: 20%;
   font-size: 1rem;
-  line-height: 19px;
+  line-height: 24px;
   font-weight: bold;
-  margin-bottom: 6px;
+  border: 0;
+  background: transparent;
+  color: #121212;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
 
 .list-grou li {
@@ -205,6 +219,10 @@ img {
 .list-grou li h4 {
   color: #0000009A;
   margin-top: 8px;
+}
+
+.messageBox {
+  margin-top: 13px;
 }
 
 .messageBox h2 {
