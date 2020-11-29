@@ -1,0 +1,16 @@
+// scss變數檔案
+@import "helpers/variable";
+//css reset
+@import "base/reset";
+//全站設定
+@import "base/base";
+//mixin
+@import "helpers/mixin";
+//bootstrap css
+@import "bootstrap/bootstrap";
+//layout css
+@import "layout/layout";
+//navbar css
+@import "components/navbar";
+//index css
+@import "pages/index";

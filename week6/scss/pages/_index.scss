@@ -1,0 +1,10 @@
+.banner {
+    background-image: url(/images/index1.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 870px;
+    @include pad {
+        background-position: 20% 10%;
+        height: 480px;
+    }
+}
