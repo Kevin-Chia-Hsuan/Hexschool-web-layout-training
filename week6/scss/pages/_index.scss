@@ -7,4 +7,17 @@
         background-position: 20% 10%;
         height: 480px;
     }
+    .container {
+        height: 100%;
+        color: $light;
+        h2 {
+            font-size: $h2-font-size;
+            line-height: 60px;
+            font-weight: bold;
+        }
+        p {
+            font-size: $h4-font-size;
+            line-height: 36px;
+        }
+    }
 }

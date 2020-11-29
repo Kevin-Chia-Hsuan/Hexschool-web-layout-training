@@ -442,7 +442,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 h3, .h3 {
@@ -11014,5 +11014,21 @@ a.text-dark:hover, a.text-dark:focus {
     background-position: 20% 10%;
     height: 480px;
   }
+}
+
+.banner .container {
+  height: 100%;
+  color: #f8f9fa;
+}
+
+.banner .container h2 {
+  font-size: 2.5rem;
+  line-height: 60px;
+  font-weight: bold;
+}
+
+.banner .container p {
+  font-size: 1.5rem;
+  line-height: 36px;
 }
 /*# sourceMappingURL=all.css.map */
