@@ -1,0 +1,15 @@
+@mixin size($w,$h) {
+    width: $w;
+    height: $h;
+}
+@mixin background-type {
+    text-indent: -99999px;
+    white-space: nowrap;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+@mixin pad {
+    @media only screen and (max-width: 768px) {
+        @content
+    }
+}
