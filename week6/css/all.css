@@ -446,11 +446,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-<<<<<<< HEAD
   font-size: 1.5rem;
-=======
-  font-size: 2rem;
->>>>>>> d40198189bc82e05c24f9f9acc92f71e96b27e1f
 }
 
 h4, .h4 {
@@ -11081,7 +11077,10 @@ a.text-dark:hover, a.text-dark:focus {
     line-height: 30px;
   }
 }
-<<<<<<< HEAD
+
+.contentInfo {
+  color: #000000;
+}
 
 @media only screen and (max-width: 768px) {
   .contentInfo {
@@ -11107,6 +11106,4 @@ a.text-dark:hover, a.text-dark:focus {
 .contentInfo img {
   width: 100%;
 }
-=======
->>>>>>> d40198189bc82e05c24f9f9acc92f71e96b27e1f
 /*# sourceMappingURL=all.css.map */

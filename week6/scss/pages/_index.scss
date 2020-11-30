@@ -7,8 +7,30 @@
         background-position: 20% 10%;
         height: 480px;
     }
+    .container {
+        height: 100%;
+        color: $light;
+        h2 {
+            font-size: $h1-font-size;
+            line-height: 60px;
+            font-weight: bold;
+            @include mobile {
+                font-size: $h2-font-size;
+                line-height: 48px;
+            }
+        }
+        p {
+            font-size: $h3-font-size;
+            line-height: 36px;
+            @include mobile {
+                font-size: $h4-font-size;
+                line-height: 30px;
+            }
+        }
+    }
 }
 .contentInfo {
+    color: $dark;
     @include pad {
         margin-left: 0;
         margin-right: 0;
