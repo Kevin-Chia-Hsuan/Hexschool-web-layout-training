@@ -15,7 +15,11 @@
             line-height: 60px;
             font-weight: bold;
             @include mobile {
+<<<<<<< HEAD
                 font-size: $h2-font-size;
+=======
+                font-size: $h3-font-size;
+>>>>>>> d40198189bc82e05c24f9f9acc92f71e96b27e1f
                 line-height: 48px;
             }
         }
@@ -23,7 +27,11 @@
             font-size: $h3-font-size;
             line-height: 36px;
             @include mobile {
+<<<<<<< HEAD
                 font-size: $h4-font-size;
+=======
+                font-size: $h5-font-size;
+>>>>>>> d40198189bc82e05c24f9f9acc92f71e96b27e1f
                 line-height: 30px;
             }
         }
