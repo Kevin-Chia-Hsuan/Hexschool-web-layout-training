@@ -5,11 +5,7 @@
         @include size(350px,60px);
         border-radius: 30px;
         text-align: center;
-<<<<<<< HEAD
         font-size: $h3-font-size;
-=======
-        font-size: $h4-font-size;
->>>>>>> d40198189bc82e05c24f9f9acc92f71e96b27e1f
         color: $light;
         @include pad {
             width: 100%;
