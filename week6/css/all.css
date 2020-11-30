@@ -438,27 +438,27 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1 {
-  font-size: 4rem;
-}
-
-h2, .h2 {
   font-size: 2.5rem;
 }
 
-h3, .h3 {
-  font-size: 1.75rem;
+h2, .h2 {
+  font-size: 2rem;
 }
 
-h4, .h4 {
+h3, .h3 {
   font-size: 1.5rem;
 }
 
-h5, .h5 {
+h4, .h4 {
   font-size: 1.25rem;
 }
 
-h6, .h6 {
+h5, .h5 {
   font-size: 1rem;
+}
+
+h6, .h6 {
+  font-size: 0.875rem;
 }
 
 .lead {
@@ -10897,9 +10897,9 @@ a.text-dark:hover, a.text-dark:focus {
 .menu a {
   position: relative;
   display: block;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   line-height: 24px;
-  color: #6c757d;
+  color: #8D8D8D;
   text-decoration: none;
   /*製作滑到a連結後，出現底線的動畫*/
 }
@@ -10959,7 +10959,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .md-menu a {
-  color: #6c757d;
+  color: #8D8D8D;
 }
 
 .md-menu a span {
@@ -10969,7 +10969,7 @@ a.text-dark:hover, a.text-dark:focus {
 /* PAD以下，menu選單 */
 .nav-menu {
   height: 0px;
-  background-color: #6c757d;
+  background-color: #8D8D8D;
 }
 
 @media only screen and (max-width: 768px) {
@@ -10988,10 +10988,10 @@ a.text-dark:hover, a.text-dark:focus {
 
 .nav-menu a {
   display: block;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 24px;
   text-align: center;
-  color: #f8f9fa;
+  color: #FFFFFF;
 }
 
 /* PAD以下，顯示menu選單 */
@@ -11000,6 +11000,38 @@ a.text-dark:hover, a.text-dark:focus {
     height: auto;
     max-height: 400px;
   }
+}
+
+.banner .btn {
+  text-decoration: none;
+  display: inline-block;
+  width: 350px;
+  height: 60px;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner .btn {
+    width: 100%;
+  }
+}
+
+.banner .btn-outline {
+  border: 2px solid #FFFFFF;
+  background: rgba(0, 0, 0, 0);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.banner .btn-outline:hover {
+  /*製作按鈕動畫1*/
+  background: rgba(255, 255, 255, 0.6);
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+  /*製造陰影*/
 }
 
 .banner {
@@ -11018,7 +11050,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .banner .container {
   height: 100%;
-  color: #f8f9fa;
+  color: #FFFFFF;
 }
 
 .banner .container h2 {
@@ -11027,8 +11059,47 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: bold;
 }
 
+@media only screen and (max-width: 414px) {
+  .banner .container h2 {
+    font-size: 2rem;
+    line-height: 48px;
+  }
+}
+
 .banner .container p {
   font-size: 1.5rem;
   line-height: 36px;
+}
+
+@media only screen and (max-width: 414px) {
+  .banner .container p {
+    font-size: 1.25rem;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contentInfo {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.contentInfo h2 {
+  font-weight: bold;
+  line-height: 48px;
+}
+
+.contentInfo p {
+  font-size: 1.25rem;
+  line-height: 30px;
+}
+
+.contentInfo a {
+  text-decoration: none;
+}
+
+.contentInfo img {
+  width: 100%;
 }
 /*# sourceMappingURL=all.css.map */
