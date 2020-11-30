@@ -2,7 +2,7 @@
     .btn {
         text-decoration:none;
         display: inline-block;
-        @include size(350px,60px);
+        @include size(340px,60px);
         border-radius: 30px;
         text-align: center;
         font-size: $h3-font-size;
