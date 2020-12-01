@@ -29,7 +29,7 @@
         }
     }
 }
-.contentInfo {
+.description {
     color: $dark;
     @include pad {
         margin-left: 0;
@@ -38,6 +38,9 @@
     h2 {
         font-weight: bold;
         line-height: 48px;
+    }
+    h3 {
+        line-height: 36px;
     }
     p {
         font-size: $h4-font-size;
@@ -48,5 +51,9 @@
     }
     img {
         width: 100%;
+    }
+    .description-content {
+        font-size: $h5-font-size;
+        line-height: 24px;
     }
 }
