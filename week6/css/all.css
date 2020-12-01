@@ -11138,4 +11138,46 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 1rem;
   line-height: 24px;
 }
+
+.productInfo {
+  background-color: #E0E0E0;
+}
+
+.productInfo img {
+  width: 350px;
+  height: 540px;
+  margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+  .productInfo img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.productInfo h4 {
+  font-size: 1rem;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.productInfo p {
+  line-height: 24px;
+}
+
+.productInfo span {
+  color: #8D8D8D;
+}
+
+.productInfo .sold h3 {
+  position: absolute;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.productInfo .transparent {
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+}
 /*# sourceMappingURL=all.css.map */
