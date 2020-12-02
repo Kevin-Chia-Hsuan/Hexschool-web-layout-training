@@ -59,9 +59,16 @@
 }
 .productInfo {
     background-color: $success;
+    a {
+        display: block;
+        transition: all 0.3s;
+    }
     img {
-        @include size(350px,540px);
+        @include size(100%,540px);
         margin-bottom: 8px;
+        @include pc-pad {
+            @include size(100%,auto);
+        }
         @include pad {
             @include size(100%,auto);
         }

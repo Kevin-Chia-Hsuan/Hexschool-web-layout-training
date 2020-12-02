@@ -4,7 +4,7 @@
 @import "base/reset";
 //全站設定
 @import "base/base";
-//mixin
+//mixin  css
 @import "helpers/mixin";
 //bootstrap css
 @import "bootstrap/bootstrap";
@@ -14,5 +14,7 @@
 @import "components/navbar";
 //banner-btn css
 @import "components/btn-custom";
+//productInfo hover__scale--small css
+@import "components/hover__scale--small";
 //index css
 @import "pages/index";
