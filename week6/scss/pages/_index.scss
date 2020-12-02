@@ -118,3 +118,25 @@
     //     filter: brightness(0.7);
     // }
 }
+.introduction {
+    h2 {
+        line-height: 48px;
+    }
+    h4 {
+        line-height: 30px;
+    }
+    p {
+        line-height: 24px;
+    }
+}
+.subscribe {
+    background-image: url(https://raw.githubusercontent.com/Kevin-Chia-Hsuan/Hexschool-web-layout-training/main/week6/images/index10.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+    h2 {
+        color: $secondary;
+        font-weight: bold;
+        line-height: 48px;
+    }
+}

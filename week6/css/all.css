@@ -11211,4 +11211,29 @@ a.text-dark:hover, a.text-dark:focus {
 .productInfo .sold a:hover h3 {
   opacity: 1;
 }
+
+.introduction h2 {
+  line-height: 48px;
+}
+
+.introduction h4 {
+  line-height: 30px;
+}
+
+.introduction p {
+  line-height: 24px;
+}
+
+.subscribe {
+  background-image: url(https://raw.githubusercontent.com/Kevin-Chia-Hsuan/Hexschool-web-layout-training/main/week6/images/index10.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 600px;
+}
+
+.subscribe h2 {
+  color: #8D8D8D;
+  font-weight: bold;
+  line-height: 48px;
+}
 /*# sourceMappingURL=all.css.map */
