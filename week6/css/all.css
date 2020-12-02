@@ -11057,7 +11057,7 @@ a.text-dark:hover, a.text-dark:focus {
   /*製造陰影*/
 }
 
-a:hover {
+.hover__scale--small:hover {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
 }
@@ -11188,14 +11188,27 @@ a:hover {
   color: #8D8D8D;
 }
 
-.productInfo .sold h3 {
-  position: absolute;
-  color: #FFFFFF;
-  font-weight: bold;
+.productInfo .sold a {
+  position: relative;
 }
 
-.productInfo .transparent {
+.productInfo .sold a h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #FFFFFF;
+  font-weight: bold;
+  opacity: 0;
+}
+
+.productInfo .sold a:hover img {
   -webkit-filter: brightness(0.7);
           filter: brightness(0.7);
+}
+
+.productInfo .sold a:hover h3 {
+  opacity: 1;
 }
 /*# sourceMappingURL=all.css.map */
