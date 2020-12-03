@@ -11122,6 +11122,37 @@ a.text-dark:hover, a.text-dark:focus {
           transform: scale(0.9);
 }
 
+.commodity-nav {
+  background-color: #916000;
+}
+
+@media only screen and (max-width: 768px) {
+  .commodity-nav {
+    display: none;
+  }
+}
+
+.commodity-nav a {
+  position: relative;
+  display: block;
+  font-size: 1.25rem;
+  line-height: 24px;
+  color: #E0E0E0;
+  text-decoration: none;
+}
+
+.commodity-nav a:hover {
+  font-weight: bolder;
+  /*滑到a連結，字體加粗*/
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 768px) {
+  .commodity-nav a {
+    display: none;
+  }
+}
+
 .banner {
   background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index1.jpg);
   background-size: cover;
