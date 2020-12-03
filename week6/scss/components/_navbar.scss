@@ -74,11 +74,14 @@
         right: 0;
     }
     a {
+        display: none;
+        @include pad {
         display: block;
         font-size: $h5-font-size;
         line-height: 24px;
         text-align: center;
         color: $light;
+        }
     }
 }
 /* PAD以下，顯示menu選單 */

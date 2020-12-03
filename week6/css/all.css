@@ -10987,11 +10987,17 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .nav-menu a {
-  display: block;
-  font-size: 1rem;
-  line-height: 24px;
-  text-align: center;
-  color: #FFFFFF;
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-menu a {
+    display: block;
+    font-size: 1rem;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+  }
 }
 
 /* PAD以下，顯示menu選單 */
