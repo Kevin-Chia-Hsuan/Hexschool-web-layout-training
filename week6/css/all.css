@@ -11002,6 +11002,60 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+.footerbar {
+  background-color: #916000;
+}
+
+.footerbar .copyright {
+  font-size: 0.875rem;
+  line-height: 16px;
+  color: #E0E0E0;
+}
+
+.footerbar .menu a {
+  position: relative;
+  display: block;
+  font-size: 1.25rem;
+  line-height: 24px;
+  color: #E0E0E0;
+  text-decoration: none;
+  /*製作滑到a連結後，出現底線的動畫*/
+}
+
+.footerbar .menu a:hover {
+  font-weight: bolder;
+  /*滑到a連結，字體加粗*/
+  color: #FFFFFF;
+}
+
+.footerbar .menu a:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  /*由50%的地方往0呈現*/
+  right: 50%;
+  /*由50%的地方往0呈現*/
+  bottom: 8px;
+  height: 0;
+  border-bottom: 2px solid #FFFFFF;
+  -webkit-transition: .5s;
+  transition: .5s;
+  /*0.5秒內動畫呈現完畢*/
+}
+
+.footerbar .menu a:hover:after {
+  left: 0;
+  /*由50%的地方往0呈現*/
+  right: 0;
+  /*由50%的地方往0呈現*/
+}
+
+@media only screen and (max-width: 768px) {
+  .footerbar .menu a {
+    display: none;
+  }
+}
+
 .btn-custom {
   text-decoration: none;
   display: inline-block;
