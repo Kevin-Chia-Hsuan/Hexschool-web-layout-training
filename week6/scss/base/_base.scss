@@ -13,3 +13,7 @@ img {
     max-width: 100%;
     height: auto;
 }
+//防止載入AOS動畫後，RWD出現破板問題
+.overx {
+    overflow-X: hidden;
+}

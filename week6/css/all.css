@@ -72,6 +72,10 @@ img {
   height: auto;
 }
 
+.overx {
+  overflow-X: hidden;
+}
+
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors

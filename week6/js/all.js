@@ -6,3 +6,4 @@ $(document).ready(function () {
         $('body').toggleClass('menu-show');
     });
 })
+AOS.init();
