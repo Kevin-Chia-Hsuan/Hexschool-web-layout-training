@@ -11407,6 +11407,14 @@ a.text-dark:hover, a.text-dark:focus {
           transform: scale(0.9);
 }
 
+.card-hover:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 2px 2px rgba(220, 220, 224, 0.5);
+          box-shadow: 2px 2px rgba(220, 220, 224, 0.5);
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
 .toolbar {
   background-color: #916000;
 }
