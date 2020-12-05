@@ -6,4 +6,14 @@ $(document).ready(function () {
         $('body').toggleClass('menu-show');
     });
 })
+
+//AOS
 AOS.init();
+
+//點選scrollTopBt後，滑動回最上層
+$('.scrollTopBtn').click(function (event) {
+    event.preventDefault();
+    $('html,body').animate({
+        scrollTop: 0
+    }, 1000);
+});

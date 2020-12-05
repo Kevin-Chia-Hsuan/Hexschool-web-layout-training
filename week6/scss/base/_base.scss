@@ -8,10 +8,15 @@
 body {
     font-family: 'Lato', sans-serif;
 }
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+.wrap {
+    position: relative;
+}
+//去掉li的點樣式
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
 }
 //防止載入AOS動畫後，RWD出現破板問題
 .overx {

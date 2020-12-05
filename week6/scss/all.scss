@@ -1,26 +1,24 @@
 // scss變數檔案
 @import "helpers/variable";
-//css reset
-@import "base/reset";
 //全站設定
 @import "base/base";
 //mixin  css
 @import "helpers/mixin";
 //bootstrap css
 @import "bootstrap/bootstrap";
-//layout css
-@import "layout/layout";
 //navbar css
 @import "components/navbar";
 //footerbar css
-@import "components/footerbar";
+@import "components/footer";
+//scroll-top-btn css
+@import "components/scroll-top-btn";
 //banner-btn css
 @import "components/btn-custom";
 //productInfo hover__scale--small css
 @import "components/hover__scale--small";
-//commodity-nav css
-@import "components/commodity-nav";
+//toolbar css
+@import "components/toolbar";
+//btn-toolbar css
+@import "components/btn-toolbar";
 //index css
 @import "pages/index";
-//commodity
-@import "pages/commodity"

@@ -1,58 +1,4 @@
 @charset "UTF-8";
-/* http://meyerweb.com/eric/tools/css/reset/ 
-v2.0 | 20110126
-License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 *,
 *::before,
 *::after {
@@ -66,10 +12,16 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+.wrap {
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .overx {
@@ -10880,10 +10832,6 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-.wrap {
-  position: relative;
-}
-
 /* LOGO */
 .logo a {
   display: block;
@@ -11012,17 +10960,17 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-.footerbar {
+.footer {
   background-color: #916000;
 }
 
-.footerbar .copyright {
+.footer .copyright {
   font-size: 0.875rem;
   line-height: 16px;
   color: #E0E0E0;
 }
 
-.footerbar .menu a {
+.footer .menu a {
   position: relative;
   display: block;
   font-size: 1.25rem;
@@ -11032,13 +10980,13 @@ a.text-dark:hover, a.text-dark:focus {
   /*製作滑到a連結後，出現底線的動畫*/
 }
 
-.footerbar .menu a:hover {
+.footer .menu a:hover {
   font-weight: bolder;
   /*滑到a連結，字體加粗*/
   color: #FFFFFF;
 }
 
-.footerbar .menu a:after {
+.footer .menu a:after {
   content: '';
   position: absolute;
   left: 50%;
@@ -11053,7 +11001,7 @@ a.text-dark:hover, a.text-dark:focus {
   /*0.5秒內動畫呈現完畢*/
 }
 
-.footerbar .menu a:hover:after {
+.footer .menu a:hover:after {
   left: 0;
   /*由50%的地方往0呈現*/
   right: 0;
@@ -11061,9 +11009,42 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 @media only screen and (max-width: 768px) {
-  .footerbar .menu a {
+  .footer .menu a {
     display: none;
   }
+}
+
+.scrollTopBtn {
+  text-decoration: none;
+  position: fixed;
+  /*圓形圖示*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*^圖示*/
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /*^圖示置中*/
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*^圖示置中*/
+  width: 40px;
+  height: 40px;
+  right: 30px;
+  bottom: 80px;
+  border-radius: 50px;
+  background-color: #916000;
+}
+
+.scrollTopBtn:hover {
+  text-decoration: none;
+  background-color: #AC8A46;
+}
+
+.scrollTopBtn i {
+  color: #FFFFFF;
 }
 
 .btn-custom {
@@ -11126,17 +11107,17 @@ a.text-dark:hover, a.text-dark:focus {
           transform: scale(0.9);
 }
 
-.commodity-nav {
+.toolbar {
   background-color: #916000;
 }
 
 @media only screen and (max-width: 768px) {
-  .commodity-nav {
+  .toolbar {
     display: none;
   }
 }
 
-.commodity-nav a {
+.toolbar a {
   position: relative;
   display: block;
   font-size: 1.25rem;
@@ -11145,16 +11126,25 @@ a.text-dark:hover, a.text-dark:focus {
   text-decoration: none;
 }
 
-.commodity-nav a:hover {
+.toolbar a:hover {
   font-weight: bolder;
   /*滑到a連結，字體加粗*/
   color: #FFFFFF;
 }
 
 @media only screen and (max-width: 768px) {
-  .commodity-nav a {
+  .toolbar a {
     display: none;
   }
+}
+
+.btn-toolbar .btn {
+  font-size: 1.25rem;
+}
+
+.btn-toolbar .btn:hover {
+  color: #916000;
+  border-bottom: 1px solid #916000;
 }
 
 .banner {
@@ -11224,10 +11214,6 @@ a.text-dark:hover, a.text-dark:focus {
 .description p {
   font-size: 1.25rem;
   line-height: 30px;
-}
-
-.description a {
-  text-decoration: none;
 }
 
 .description img {
@@ -11330,14 +11316,5 @@ a.text-dark:hover, a.text-dark:focus {
   color: #8D8D8D;
   font-weight: bold;
   line-height: 48px;
-}
-
-.btn-toolbar .btn {
-  font-size: 1.25rem;
-}
-
-.btn-toolbar .btn:hover {
-  color: #916000;
-  border-bottom: 1px solid #916000;
 }
 /*# sourceMappingURL=all.css.map */
