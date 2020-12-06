@@ -17,6 +17,9 @@ li {
 }
 a {
     text-decoration: none;
+    &:hover {
+        text-decoration: none !important;
+    }
 }
 //防止載入AOS動畫後，RWD出現破板問題
 .overx {
