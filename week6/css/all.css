@@ -11136,6 +11136,146 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+.scrollTopBtn {
+  text-decoration: none;
+  position: fixed;
+  /*圓形圖示*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*^圖示*/
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /*^圖示置中*/
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*^圖示置中*/
+  width: 40px;
+  height: 40px;
+  right: 30px;
+  bottom: 80px;
+  border-radius: 50px;
+  background-color: #916000;
+}
+
+.scrollTopBtn:hover {
+  text-decoration: none;
+  background-color: #AC8A46;
+}
+
+.scrollTopBtn i {
+  color: #FFFFFF;
+}
+
+.btn-custom {
+  text-decoration: none;
+  display: inline-block;
+  width: 340px;
+  height: 60px;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .btn-custom {
+    width: 100%;
+  }
+}
+
+.btn-custom-light {
+  text-decoration: none;
+  color: #FFFFFF;
+  line-height: 56px;
+  border: 2px solid #FFFFFF;
+  background: rgba(0, 0, 0, 0);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-custom-light:hover {
+  /*製作按鈕動畫1*/
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.6);
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+  /*製造陰影*/
+}
+
+.btn-custom-dark {
+  text-decoration: none;
+  color: #000000;
+  border: 2px solid #000000;
+  font-size: 1.25rem;
+  line-height: 56px;
+  background: rgba(0, 0, 0, 0);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-custom-dark:hover {
+  /*製作按鈕動畫1*/
+  text-decoration: none;
+  background: #E0E0E0;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+  /*製造陰影*/
+}
+
+.hover__scale--small:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.card-hover:hover {
+  -webkit-box-shadow: 2px 2px rgba(220, 220, 224, 0.5);
+          box-shadow: 2px 2px rgba(220, 220, 224, 0.5);
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.toolbar {
+  background-color: #916000;
+}
+
+@media only screen and (max-width: 768px) {
+  .toolbar {
+    display: none;
+  }
+}
+
+.toolbar a {
+  position: relative;
+  display: block;
+  font-size: 1.25rem;
+  line-height: 24px;
+  color: #E0E0E0;
+  text-decoration: none;
+}
+
+.toolbar a:hover {
+  font-weight: bolder;
+  /*滑到a連結，字體加粗*/
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 768px) {
+  .toolbar a {
+    display: none;
+  }
+}
+
+.btn-toolbar .btn {
+  font-size: 1.25rem;
+}
+
+.btn-toolbar .btn:hover {
+  color: #916000;
+  border-bottom: 1px solid #916000;
+}
+
 /* LOGO */
 .logo a {
   display: block;
@@ -11316,146 +11456,6 @@ a.text-dark:hover, a.text-dark:focus {
   .footer .menu a {
     display: none;
   }
-}
-
-.scrollTopBtn {
-  text-decoration: none;
-  position: fixed;
-  /*圓形圖示*/
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  /*^圖示*/
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  /*^圖示置中*/
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /*^圖示置中*/
-  width: 40px;
-  height: 40px;
-  right: 30px;
-  bottom: 80px;
-  border-radius: 50px;
-  background-color: #916000;
-}
-
-.scrollTopBtn:hover {
-  text-decoration: none;
-  background-color: #AC8A46;
-}
-
-.scrollTopBtn i {
-  color: #FFFFFF;
-}
-
-.btn-custom {
-  text-decoration: none;
-  display: inline-block;
-  width: 340px;
-  height: 60px;
-  border-radius: 30px;
-  text-align: center;
-  font-size: 1.5rem;
-}
-
-@media only screen and (max-width: 768px) {
-  .btn-custom {
-    width: 100%;
-  }
-}
-
-.btn-custom-light {
-  text-decoration: none;
-  color: #FFFFFF;
-  line-height: 56px;
-  border: 2px solid #FFFFFF;
-  background: rgba(0, 0, 0, 0);
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.btn-custom-light:hover {
-  /*製作按鈕動畫1*/
-  text-decoration: none;
-  background: rgba(255, 255, 255, 0.6);
-  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
-  /*製造陰影*/
-}
-
-.btn-custom-dark {
-  text-decoration: none;
-  color: #000000;
-  border: 2px solid #000000;
-  font-size: 1.25rem;
-  line-height: 56px;
-  background: rgba(0, 0, 0, 0);
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.btn-custom-dark:hover {
-  /*製作按鈕動畫1*/
-  text-decoration: none;
-  background: #E0E0E0;
-  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
-  /*製造陰影*/
-}
-
-.hover__scale--small:hover {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-}
-
-.card-hover:hover {
-  -webkit-box-shadow: 2px 2px rgba(220, 220, 224, 0.5);
-          box-shadow: 2px 2px rgba(220, 220, 224, 0.5);
-  -webkit-transform: scale(0.95);
-          transform: scale(0.95);
-}
-
-.toolbar {
-  background-color: #916000;
-}
-
-@media only screen and (max-width: 768px) {
-  .toolbar {
-    display: none;
-  }
-}
-
-.toolbar a {
-  position: relative;
-  display: block;
-  font-size: 1.25rem;
-  line-height: 24px;
-  color: #E0E0E0;
-  text-decoration: none;
-}
-
-.toolbar a:hover {
-  font-weight: bolder;
-  /*滑到a連結，字體加粗*/
-  color: #FFFFFF;
-}
-
-@media only screen and (max-width: 768px) {
-  .toolbar a {
-    display: none;
-  }
-}
-
-.btn-toolbar .btn {
-  font-size: 1.25rem;
-}
-
-.btn-toolbar .btn:hover {
-  color: #916000;
-  border-bottom: 1px solid #916000;
 }
 
 .banner {
