@@ -9,10 +9,10 @@
     right: 30px;
     bottom: 80px;
     border-radius: 50px;
-    background-color: $primary;
+    background: $primary;
     &:hover {
         text-decoration: none;
-        background-color: $info;
+        background: $info;
     }
     i {
         color: $light;
