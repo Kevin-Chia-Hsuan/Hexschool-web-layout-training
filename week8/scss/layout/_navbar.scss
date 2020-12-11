@@ -11,6 +11,7 @@
 .nav-menu {
         font-weight: bolder;
         @include mobile-menu-type;
+        background: $light;
     li {
         border-bottom: 1px solid $success;
         a {
@@ -51,5 +52,5 @@
 /* mobile以下，顯示menu選單 */
 .menu-show .nav-menu {
     height: auto;
-    max-height: 400px;
+    max-height: 800px;
 }
