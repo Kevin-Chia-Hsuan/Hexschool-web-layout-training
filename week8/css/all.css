@@ -20,6 +20,11 @@ li {
   overflow-X: hidden;
 }
 
+.bg-cover {
+  background-size: cover;
+  background-position: center center;
+}
+
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -12702,6 +12707,34 @@ a:hover {
 .card .person {
   width: 100px;
   height: 100px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+}
+
+.banner {
+  background-image: url("https://raw.githubusercontent.com/Kevin-Chia-Hsuan/Hexschool-web-layout-training/main/week8/images/index-9.jpeg");
+  background-size: cover;
+  background-position: center center;
+  height: 584px;
+}
+
+.item::before {
+  content: '';
+  background: #000;
+  display: block;
+  height: 100%;
+  opacity: .3;
+  -webkit-transition: opacity .2s ease-in-out;
+  transition: opacity .2s ease-in-out;
+}
+
+.item:hover::before {
+  opacity: .6;
+}
+
+.item h5 {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
