@@ -12720,6 +12720,12 @@ a:hover {
   height: 584px;
 }
 
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .item::before {
   content: '';
   background: #000;
@@ -12728,16 +12734,34 @@ a:hover {
   opacity: .3;
   -webkit-transition: opacity .2s ease-in-out;
   transition: opacity .2s ease-in-out;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
 }
 
 .item:hover::before {
   opacity: .6;
 }
 
-.item h5 {
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+.flex-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.flex-1 h5 {
+  position: relative;
+  z-index: 1;
 }
 /*# sourceMappingURL=all.css.map */
