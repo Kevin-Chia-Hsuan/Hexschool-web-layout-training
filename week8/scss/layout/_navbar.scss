@@ -2,7 +2,8 @@
 .logo {
     a {
         display: block;
-        background-image: url(https://raw.githubusercontent.com/Kevin-Chia-Hsuan/Hexschool-web-layout-training/23eb430c04b27117c183e259992a4a2fdec8def9/week8/images/logo.svg);
+        /* 將background-image寫在Html的標籤中，方便後端工程師替換logo圖片 */
+        // background-image: url(https://raw.githubusercontent.com/Kevin-Chia-Hsuan/Hexschool-web-layout-training/23eb430c04b27117c183e259992a4a2fdec8def9/week8/images/logo.svg);
         @include background-type;
         background-size: cover;
         @include size(121px,56px);
