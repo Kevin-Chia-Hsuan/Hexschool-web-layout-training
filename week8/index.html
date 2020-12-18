@@ -81,62 +81,56 @@
             </div>
         </nav>
         <section>
-            <div class="container mb-10">
+            <div class="container mb-8 mb-md-11">
                 <div class="row align-items-center">
-                    <div class="col-xl-5">
+                    <div class="col-md-6 offset-md-3 col-xl-5 offset-lg-0 mb-3 mb-md-6 mb-lg-0">
                         <img src="https://raw.githubusercontent.com/Kevin-Chia-Hsuan/Hexschool-web-layout-training/main/week8/images/index-1.png"
                             class="img-fluid">
                     </div>
                     <div class="col-xl-7">
-                        <h2 class="text-3xl font-weight-bolder">寵物服務，盡在 PETPET</h2>
-                        <p class="text-xl font-weight-bold">當您的毛孩有需要時，幫您找到最合適的服務者！</p>
-                        <div class="row no-gutters mt-9">
+                        <div class="row">
+                            <div class="col-md-8 offset-md-2 col-lg-12 offset-lg-0">
+                                <h2 class="text-lg-3xl text-lg-2xl text-xl font-weight-bolder mb-1 mb-md-2 mb-lg-4">
+                                    寵物服務，盡在
+                                    PETPET
+                                </h2>
+                                <p class="text-lg font-weight-bold mb-2 mb-md-5 mb-lg-0">當您的毛孩有需要時，<br
+                                        class="d-lg-none">幫您找到最合適的服務者！
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row no-gutters mt-lg-9">
                             <div class="col-md-8 offset-md-2 mb-3 col-lg-2 offset-lg-0">
-                                <div class="dropdown">
-                                    <button class="btn btn-outline-info dropdown-toggle btn-lg w-100" type="button"
-                                        id="breeds" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        品種
-                                    </button>
-                                    <!-- min-width：100%屬性用於將下拉框長度與按鈕長度保持一致 -->
-                                    <div class="dropdown-menu" style="min-width:100%;"
-                                        aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#">小型犬</a>
-                                        <a class="dropdown-item" href="#">中型犬</a>
-                                        <a class="dropdown-item" href="#">大型犬</a>
-                                    </div>
-                                </div>
+                                <select class="w-100 custom-select-l text-info border-info rounded"
+                                    id="inputGroupSelect01">
+                                    <option selected>品種</option>
+                                    <option value="1">貓</option>
+                                    <option value="2">小型犬</option>
+                                    <option value="3">中型犬</option>
+                                    <option value="4">大型犬</option>
+                                </select>
                             </div>
                             <div class="col-md-8 offset-md-2 mb-3 col-lg-4 offset-lg-0">
-                                <div class="dropdown">
-                                    <button class="btn btn-outline-info dropdown-toggle btn-lg w-100" type="button"
-                                        id="service" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        服務
-                                    </button>
-                                    <!-- min-width：100%屬性用於將下拉框長度與按鈕長度保持一致 -->
-                                    <div class="dropdown-menu" style="min-width:100%;"
-                                        aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#">清潔</a>
-                                        <a class="dropdown-item" href="#">醫療</a>
-                                        <a class="dropdown-item" href="#">糧食</a>
-                                        <a class="dropdown-item" href="#">娛樂</a>
-                                    </div>
-                                </div>
+                                <select class="w-100 custom-select-l text-info border-info rounded"
+                                    id="inputGroupSelect02">
+                                    <option selected>服務</option>
+                                    <option value="1">寵物寄宿</option>
+                                    <option value="2">寵物美容</option>
+                                    <option value="3">到府照顧</option>
+                                    <option value="4">遛狗保姆</option>
+                                    <option value="5">行為訓練</option>
+                                </select>
                             </div>
                             <div class="col-md-8 offset-md-2 mb-3 col-lg-4 offset-lg-0">
-                                <div class="dropdown">
-                                    <button class="btn btn-outline-info dropdown-toggle btn-lg w-100" type="button"
-                                        id="area" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        地區
-                                    </button>
-                                    <!-- min-width：100%屬性用於將下拉框長度與按鈕長度保持一致 -->
-                                    <div class="dropdown-menu" style="min-width:100%;"
-                                        aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#">北部</a>
-                                        <a class="dropdown-item" href="#">中部</a>
-                                        <a class="dropdown-item" href="#">南部</a>
-                                        <a class="dropdown-item" href="#">東部</a>
-                                    </div>
-                                </div>
+                                <select class="w-100 custom-select-l text-info border-info rounded"
+                                    id="inputGroupSelect03">
+                                    <option selected>地區</option>
+                                    <option value="1">北部</option>
+                                    <option value="2">中部</option>
+                                    <option value="3">南部</option>
+                                    <option value="4">東部</option>
+                                    <option value="5">離島</option>
+                                </select>
                             </div>
                             <div class="col-md-8 offset-md-2 col-lg-2 offset-lg-0">
                                 <button type="button" class="btn btn-warning btn-lg w-100">搜尋</button>
@@ -147,7 +141,7 @@
             </div>
         </section>
         <section>
-            <div class="container mb-10">
+            <div class="container mb-8 mb-md-10 mb-lg-11">
                 <div class="row">
                     <div class="col-12">
                         <h3 class="text-2xl font-weight-bolder">本月熱門保姆</h3>
@@ -439,11 +433,11 @@
             </div>
         </section>
         <section>
-            <div class="container mb-8 mb-md-10">
+            <div class="container mb-8 mb-md-10 mb-lg-11">
                 <h3 class="text-2xl font-weight-bolder">線上預約</h3>
                 <p class="text-m font-weight-bold">即時瞭解您的需求，安排最適合毛孩的寵物保姆！</p>
                 <div class="form-row" style="min-height: 350px;">
-                    <div class="col-md-4">
+                    <div class="col-md-3 col-lg-4">
                         <a href="#" class="h-100">
                             <div class="item bg-cover h-100 position-relative"
                                 style="background-image: url(https://raw.githubusercontent.com/Kevin-Chia-Hsuan/Hexschool-web-layout-training/main/week8/images/index-5.jpeg)">
@@ -454,7 +448,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3 mt-1 mt-md-0">
+                    <div class="col-md-3 col-lg-3 mt-1 mt-md-0">
                         <a href="#" class="h-100">
                             <div class="item bg-cover h-100 position-relative"
                                 style="background-image: url(https://raw.githubusercontent.com/Kevin-Chia-Hsuan/Hexschool-web-layout-training/main/week8/images/index-6.jpeg)">
@@ -464,7 +458,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-lg-3">
                         <div class="form-row flex-column h-100">
                             <div class="col h-50 mt-1 mt-md-0">
                                 <a href="#" class="h-100">
@@ -488,7 +482,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 mt-1 mt-md-0">
+                    <div class="col-md-3 col-lg-2 mt-1 mt-md-0">
                         <a href="#" class="h-100">
                             <div class="item bg-cover h-100 position-relative"
                                 style="background-image: url(https://raw.githubusercontent.com/Kevin-Chia-Hsuan/Hexschool-web-layout-training/main/week8/images/index-3.jpeg)">
@@ -502,7 +496,7 @@
             </div>
         </section>
         <section>
-            <div class="container-fluid mb-md-10">
+            <div class="container-fluid mb-8 mb-md-10 mb-lg-11">
                 <div class="row">
                     <div class="banner w-100"
                         style="background-image: url('https://raw.githubusercontent.com/Kevin-Chia-Hsuan/Hexschool-web-layout-training/main/week8/images/index-9.jpeg');">
@@ -530,18 +524,30 @@
             </div>
         </section>
         <section>
-            <div class="container">
+            <div class="container mb-8 mb-md-10 mb-lg-11">
                 <h3 class="text-2xl font-weight-bolder">預約流程</h3>
                 <p class="text-m font-weight-bold">輕鬆三步驟，立即獲取最佳服務！</p>
                 <div class="row">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <h5 class="text-m font-weight-bold">1. 查詢想要的服務</h5>
+                        <img src="https://raw.githubusercontent.com/Kevin-Chia-Hsuan/Hexschool-web-layout-training/main/week8/images/index-10.png"
+                            class="img-fluid">
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="text-m font-weight-bold">2. 找到合適的保姆</h5>
+                        <img src="https://raw.githubusercontent.com/Kevin-Chia-Hsuan/Hexschool-web-layout-training/main/week8/images/index-11.png"
+                            class="img-fluid">
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="text-m font-weight-bold">3. 填寫資料完成預約</h5>
+                        <img src="https://raw.githubusercontent.com/Kevin-Chia-Hsuan/Hexschool-web-layout-training/main/week8/images/index-12.png"
+                            class="img-fluid">
+                    </div>
                 </div>
             </div>
         </section>
         <section>
-            <div class="containet-fluid help d-flex flex-column justify-content-center">
+            <div class="containet-fluid help d-flex flex-column justify-content-center mb-2 mb-md-10">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-9 col-lg-7">
@@ -563,11 +569,12 @@
             </div>
         </section>
         <footer>
-            <div class="container my-md-10">
+            <div class="container">
                 <div class="row">
                     <!-- 手機版footer logo在md尺寸以上隱藏 -->
                     <div class="col-12 logo d-md-none">
-                        <a href="#">LOGO</a>
+                        <a href="index.html"
+                            style="background-image: url(https://raw.githubusercontent.com/Kevin-Chia-Hsuan/Hexschool-web-layout-training/23eb430c04b27117c183e259992a4a2fdec8def9/week8/images/logo.svg);">LOGO</a>
                     </div>
                 </div>
                 <!-- PAD、PC版footer-menu在md尺寸以下隱藏 -->
@@ -662,7 +669,10 @@
         </footer>
     </div>
 
-
+    <!-- 返回頁面最上面按鈕 -->
+    <a href="#nav" class="scrollTopBtn">
+        <i class="fas fa-angle-up fa-2x"></i>
+    </a>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--↑將AOS js檔案import進來-->
