@@ -12935,7 +12935,7 @@ a.text-dark:hover, a.text-dark:focus {
   transition: max-height 1.5s;
   position: absolute;
   z-index: 100;
-  top: 70px;
+  top: 56px;
   left: 0;
   right: 0;
   background: #FFFFFF;
