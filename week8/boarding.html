@@ -30,9 +30,11 @@
     <!--↑載入Material Icons-->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <!--↑將AOS檔案import進來-->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!--↑將Swiper檔案import進來-->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+    <!--↑將jquery-ui檔案import進來 日期選擇器用-->
     <link rel="stylesheet" href="css/all.css">
     <!--↑將自己的CSS檔案import進來-->
 </head>
@@ -118,11 +120,11 @@
                                 <option value="4">台南市</option>
                                 <option value="5">高雄市</option>
                             </select>
-                            <input type="date" name="bookdateStart"
-                                class="custom-select-l text-info border-info rounded mr-2 mt-4 mt-md-0"
+                            <input type="text" id="datepickerStart"
+                                class="custom-select-l text-info border-info rounded  mt-4 mt-md-0"
                                 style="width:158px;">
                             <span class="mr-2 d-none d-md-inline">至</span>
-                            <input type="date" name="bookdateEnd"
+                            <input type="text" id="datepickerEnd"
                                 class="custom-select-l text-info border-info rounded  mt-4 mt-md-0"
                                 style="width:158px;">
                         </div>
@@ -556,9 +558,10 @@
         integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
         crossorigin="anonymous"></script>
     <!--↑將Bootstrap-4檔案import進來-->
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!--↑將swiper檔案import進來-->
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <!--↑將jquery-ui檔案import進來 日期選擇器用-->
     <script src="js/all.js"></script>
     <!--↑將js檔案import進來-->
 

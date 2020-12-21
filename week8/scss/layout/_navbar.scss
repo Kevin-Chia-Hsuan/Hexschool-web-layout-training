@@ -14,7 +14,9 @@
 }
 .nav-menu {
         font-weight: bolder;
-        @include mobile-menu-type;
+        @include mobile {
+            @include mobile-menu-type;
+        }
         background: $light;
     li {
         border-bottom: 1px solid $success;
@@ -55,6 +57,7 @@
 }
 /* mobile以下，顯示menu選單 */
 .menu-show .nav-menu {
-    height: auto;
-    max-height: 800px;
+    @include mobile {
+        max-height: 600px;
+    }
 }

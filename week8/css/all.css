@@ -12933,16 +12933,21 @@ a.text-dark:hover, a.text-dark:focus {
 
 .nav-menu {
   font-weight: bolder;
-  max-height: 0px;
-  overflow: hidden;
-  -webkit-transition: max-height 1.5s;
-  transition: max-height 1.5s;
-  position: absolute;
-  z-index: 100;
-  top: 56px;
-  left: 0;
-  right: 0;
   background: #FFFFFF;
+}
+
+@media only screen and (max-width: 575px) {
+  .nav-menu {
+    max-height: 0px;
+    overflow: hidden;
+    -webkit-transition: max-height .5s;
+    transition: max-height .5s;
+    position: absolute;
+    z-index: 100;
+    top: 56px;
+    left: 0;
+    right: 0;
+  }
 }
 
 .nav-menu li {
@@ -12994,9 +12999,10 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /* mobile以下，顯示menu選單 */
-.menu-show .nav-menu {
-  height: auto;
-  max-height: 800px;
+@media only screen and (max-width: 575px) {
+  .menu-show .nav-menu {
+    max-height: 600px;
+  }
 }
 
 a {

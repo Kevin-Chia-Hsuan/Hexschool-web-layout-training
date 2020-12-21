@@ -37,3 +37,33 @@ $('.scrollTopBtn').click(function (event) {
         scrollTop: 0
     }, 1000);
 });
+
+//日期選擇器
+$(function () {
+    $("#datepickerStart").datepicker({
+        //年份可以選擇
+        changeYear: true,
+        //月份可以選擇
+        changeMonth: true,
+        //設定 下拉式選單月份 在 年份的後面
+        showMonthAfterYear: true,
+        //設定月份縮寫
+        monthNamesShort: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
+        dateFormat: "yy/mm/dd"
+
+    });
+});
+$(function () {
+    $("#datepickerEnd").datepicker({
+        //年份可以選擇
+        changeYear: true,
+        //月份可以選擇
+        changeMonth: true,
+        //設定 下拉式選單月份 在 年份的後面
+        showMonthAfterYear: true,
+        //設定月份縮寫
+        monthNamesShort: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
+        dateFormat: "yy/mm/dd"
+
+    });
+});
