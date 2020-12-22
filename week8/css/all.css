@@ -10,11 +10,14 @@
 
 body {
   font-family: 'Noto Sans TC', sans-serif;
-  overflow-X: hidden;
 }
 
 li {
   list-style: none;
+}
+
+.overx {
+  overflow-X: hidden;
 }
 
 .bg-cover {
