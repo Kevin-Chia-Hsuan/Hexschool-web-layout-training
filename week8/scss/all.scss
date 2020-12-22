@@ -14,17 +14,15 @@
 @import "components/scrollTopBtn";
 @import "components/scaleSmall";
 
-
 //utilities
 @import "utilities/text-size";
 @import "utilities/custom-select";
-@import "utilities/select-background";
-@import "utilities/start-color";
+@import "utilities/custom-card";
+@import "utilities/background-secondary";
+@import "utilities/star-color";
 
 //layout
 @import "layout/navbar";
-@import "layout/footer-menu";
-
 
 //pages
 @import "pages/index";
