@@ -10,14 +10,11 @@
 
 body {
   font-family: 'Noto Sans TC', sans-serif;
+  overflow-X: hidden;
 }
 
 li {
   list-style: none;
-}
-
-.overx {
-  overflow-X: hidden;
 }
 
 .bg-cover {
@@ -12912,6 +12909,10 @@ a.text-dark:hover, a.text-dark:focus {
 
 .select-background {
   background-color: #F0AD25;
+}
+
+.fa-star {
+  color: #F0AD25;
 }
 
 .nav-bg {
