@@ -2,16 +2,22 @@
     .big-img {
         img {
             @include size(540px,440px);
+            @include pc-pad {
+                @include size(270px,221px);
+            }
         }
     }
     .small-img {
         display: flex;
-        width: 540px;
+        width: 100%;
         li {
             margin-top: 12px;
             margin-right: 8px;
             img {
                 @include size(96px,96px);
+                @include pc-pad {
+                    @include size(63px,63px);
+                }
             }
         }
     }

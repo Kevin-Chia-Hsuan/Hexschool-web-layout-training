@@ -12836,11 +12836,18 @@ a.text-dark:hover, a.text-dark:focus {
   height: 440px;
 }
 
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .img-switch .big-img img {
+    width: 270px;
+    height: 221px;
+  }
+}
+
 .img-switch .small-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 540px;
+  width: 100%;
 }
 
 .img-switch .small-img li {
@@ -12851,6 +12858,13 @@ a.text-dark:hover, a.text-dark:focus {
 .img-switch .small-img li img {
   width: 96px;
   height: 96px;
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .img-switch .small-img li img {
+    width: 63px;
+    height: 63px;
+  }
 }
 
 .text-xs {
