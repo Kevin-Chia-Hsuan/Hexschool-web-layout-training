@@ -40,3 +40,12 @@ $('.scrollTopBtn').click(function (event) {
 
 //AOS
 AOS.init();
+
+//圖片切換效果
+$(function () {
+    $('#img-switch .small-img a').click(function (e) {
+        var $imgSrc = $(this).attr('href');
+        $('#img-switch .big-img img').attr('src', $imgSrc);
+        return false;
+    });
+})

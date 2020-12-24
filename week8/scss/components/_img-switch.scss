@@ -1,0 +1,18 @@
+.img-switch {
+    .big-img {
+        img {
+            @include size(540px,440px);
+        }
+    }
+    .small-img {
+        display: flex;
+        width: 540px;
+        li {
+            margin-top: 12px;
+            margin-right: 8px;
+            img {
+                @include size(96px,96px);
+            }
+        }
+    }
+}
