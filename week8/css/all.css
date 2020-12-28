@@ -12970,6 +12970,14 @@ a.text-dark:hover, a.text-dark:focus {
   color: #F0AD25;
 }
 
+@media only screen and (min-width: 992px) {
+  .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+  }
+}
+
 .nav-bg {
   background-color: #FFFFFF;
 }
