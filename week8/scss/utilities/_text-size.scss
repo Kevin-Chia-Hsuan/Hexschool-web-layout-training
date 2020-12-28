@@ -16,6 +16,14 @@ $text-types: (
         line-height: 1.5;
     }
 }
+@include pc {
+    @each $name,$font-size-custom in $text-types {
+        .text-pc-#{$name} {
+            font-size: $font-size-custom;
+            line-height: 1.5;
+        }
+    }
+}
 @include mobile {
     @each $name,$font-size-custom in $text-types {
         .text-sm-#{$name} {
