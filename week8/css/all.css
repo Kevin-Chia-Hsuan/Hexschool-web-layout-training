@@ -8,16 +8,14 @@
           box-sizing: border-box;
 }
 
+html,
 body {
+  overflow-x: hidden;
   font-family: 'Noto Sans TC', sans-serif;
 }
 
 li {
   list-style: none;
-}
-
-.overx {
-  overflow-X: hidden;
 }
 
 .bg-cover {
