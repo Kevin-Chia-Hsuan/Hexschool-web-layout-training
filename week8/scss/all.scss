@@ -1,16 +1,17 @@
 //base全站設定
 @import "base/base";
 
+//bootstrap
+//bootstrap css
+@import "bootstrap/bootstrap";
+
 //helpers
 //helpers  css
 @import "helpers/mixin";
 @import "helpers/variables";
 
-//bootstrap
-//bootstrap css
-@import "bootstrap/bootstrap";
-
 //components
+@import "components/navbar";
 @import "components/scrollTopBtn";
 @import "components/scaleSmall";
 @import "components/img-switch";
@@ -23,10 +24,6 @@
 @import "utilities/star-color";
 @import "utilities/fixed";
 @import "utilities/zindex";
-
-
-//layout
-@import "layout/navbar";
 
 //pages
 @import "pages/index";

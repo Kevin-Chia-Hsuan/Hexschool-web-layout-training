@@ -12791,6 +12791,97 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+.nav-bg {
+  background-color: #FFFFFF;
+}
+
+/* LOGO */
+.logo a {
+  display: block;
+  /* 將background-image寫在Html的標籤中，方便後端工程師替換logo圖片 */
+  text-indent: -99999px;
+  white-space: nowrap;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 125px;
+  height: 56px;
+}
+
+.nav-menu {
+  font-weight: bolder;
+  background: #FFFFFF;
+}
+
+@media only screen and (max-width: 575px) {
+  .nav-menu {
+    max-height: 0px;
+    overflow: hidden;
+    -webkit-transition: max-height .5s;
+    transition: max-height .5s;
+    position: absolute;
+    z-index: 100;
+    top: 56px;
+    left: 0;
+    right: 0;
+  }
+}
+
+.nav-menu li {
+  border-bottom: 1px solid #CED4DA;
+}
+
+.nav-menu li a {
+  text-align: center;
+}
+
+.menu a {
+  position: relative;
+  font-weight: bolder;
+  /*製作滑到a連結後，出現底線的動畫*/
+}
+
+.menu a:hover {
+  color: #F6A436;
+}
+
+.menu a:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  /*由50%的地方往0呈現*/
+  right: 50%;
+  /*由50%的地方往0呈現*/
+  bottom: 8px;
+  height: 0;
+  border-bottom: 2px solid #F6A436;
+  -webkit-transition: .5s;
+  transition: .5s;
+  /*0.5秒內動畫呈現完畢*/
+}
+
+.menu a:hover:after {
+  left: 0;
+  /*由50%的地方往0呈現*/
+  right: 0;
+  /*由50%的地方往0呈現*/
+}
+
+.showmenu {
+  color: #F0AD25;
+}
+
+.showmenu:hover {
+  color: #F6A436;
+}
+
+/* mobile以下，顯示menu選單 */
+@media only screen and (max-width: 575px) {
+  .menu-show .nav-menu {
+    max-height: 600px;
+  }
+}
+
 .scrollTopBtn {
   text-decoration: none;
   position: fixed;
@@ -13034,97 +13125,6 @@ a.text-dark:hover, a.text-dark:focus {
 
 .zindex2 {
   z-index: 1;
-}
-
-.nav-bg {
-  background-color: #FFFFFF;
-}
-
-/* LOGO */
-.logo a {
-  display: block;
-  /* 將background-image寫在Html的標籤中，方便後端工程師替換logo圖片 */
-  text-indent: -99999px;
-  white-space: nowrap;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 125px;
-  height: 56px;
-}
-
-.nav-menu {
-  font-weight: bolder;
-  background: #FFFFFF;
-}
-
-@media only screen and (max-width: 575px) {
-  .nav-menu {
-    max-height: 0px;
-    overflow: hidden;
-    -webkit-transition: max-height .5s;
-    transition: max-height .5s;
-    position: absolute;
-    z-index: 100;
-    top: 56px;
-    left: 0;
-    right: 0;
-  }
-}
-
-.nav-menu li {
-  border-bottom: 1px solid #CED4DA;
-}
-
-.nav-menu li a {
-  text-align: center;
-}
-
-.menu a {
-  position: relative;
-  font-weight: bolder;
-  /*製作滑到a連結後，出現底線的動畫*/
-}
-
-.menu a:hover {
-  color: #F6A436;
-}
-
-.menu a:after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  /*由50%的地方往0呈現*/
-  right: 50%;
-  /*由50%的地方往0呈現*/
-  bottom: 8px;
-  height: 0;
-  border-bottom: 2px solid #F6A436;
-  -webkit-transition: .5s;
-  transition: .5s;
-  /*0.5秒內動畫呈現完畢*/
-}
-
-.menu a:hover:after {
-  left: 0;
-  /*由50%的地方往0呈現*/
-  right: 0;
-  /*由50%的地方往0呈現*/
-}
-
-.showmenu {
-  color: #F0AD25;
-}
-
-.showmenu:hover {
-  color: #F6A436;
-}
-
-/* mobile以下，顯示menu選單 */
-@media only screen and (max-width: 575px) {
-  .menu-show .nav-menu {
-    max-height: 600px;
-  }
 }
 
 .banner {

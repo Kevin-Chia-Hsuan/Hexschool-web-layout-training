@@ -506,20 +506,20 @@
                             <h3 class="banner-title text-3xl text-light font-weight-bolder mt-md-10 mb-md-5 mt-9">
                                 PETPET目前已有
                             </h3>
-                            <div class="row banner-body mt-md-10">
-                                <div class="col-6 col-md-3 pb-md-10 border-left mt-md-0 mt-9">
+                            <ul class="row banner-body mt-md-10">
+                                <li class="col-6 col-md-3 pb-md-10 border-left mt-md-0 mt-9">
                                     <h2 class="text-4xl text-light font-weight-bolder">5278</h2>
                                     <p class="text-m text-light font-weight-bold">人使用 PETPET</p>
-                                </div>
-                                <div class="col-6 col-md-3 pb-md-10 border-left mt-md-0 mt-10">
+                                </li>
+                                <li class="col-6 col-md-3 pb-md-10 border-left mt-md-0 mt-10">
                                     <h2 class="text-4xl text-light font-weight-bolder">580</h2>
                                     <p class="text-m text-light font-weight-bold">人成為寵物保母</p>
-                                </div>
-                                <div class="col-6 col-md-3 pb-md-10 border-left mt-md-0 mt-10">
+                                </li>
+                                <li class="col-6 col-md-3 pb-md-10 border-left mt-md-0 mt-10">
                                     <h2 class="text-4xl text-light font-weight-bolder">1000+</h2>
                                     <p class="text-m text-light font-weight-bold">已完成服務</p>
-                                </div>
-                            </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -554,10 +554,12 @@
                     <div class="row">
                         <div class="col-md-9 col-lg-7">
                             <h2 class="text-3xl text-sm-lg font-weight-bolder">有任何我們能幫助您的嗎？</h2>
-                            <h4 class="text-m text-sm-m font-weight-bold">輸入電子信箱<br>將有專業人員在線幫您解決所有問題
-                            </h4>
+                            <!-- <h4 class="text-m text-sm-m font-weight-bold">輸入電子信箱<br>將有專業人員在線幫您解決所有問題
+                            </h4> -->
+                            <label for="email"
+                                class="text-m text-sm-m font-weight-bold">輸入電子信箱<br>將有專業人員在線幫您解決所有問題</label>
                             <div class="input-group">
-                                <input type="email" class="form-control form-control-lg border border-light"
+                                <input type="email" id="email" class="form-control form-control-lg border border-light"
                                     placeholder="example@gmail.com" aria-label="example@gmail.com"
                                     aria-describedby="button-addon2">
                                 <div class="input-group-append">
@@ -643,7 +645,8 @@
                     <div class="col-md-3">
                         <ul class="m-0">
                             <li>
-                                <h5 class="d-block font-weight-bolder mb-0 py-4"><a href="#">聯繫我們</a></h5>
+                                <h5 class="d-block font-weight-bolder mb-0 py-4"><a
+                                        href="mailto:apog780212@gmail.com">聯繫我們</a></h5>
                             </li>
                             <li>
                                 <a href="#" class="d-block font-weight-bolder pt-7">petpet@petmail.com</a>
@@ -652,20 +655,20 @@
                     </div>
                 </div>
             </div>
-            <div class="container bg-light zindex pt-md-11">
+            <div class="container bg-light zindex pt-md-11 pb-md-6">
                 <div class="row">
-                    <ul class="col-12 d-flex justify-content-between">
-                        <li class="d-none d-md-flex">
+                    <div class="col-12 d-flex justify-content-between">
+                        <div class="d-none d-md-flex">
                             <h4 class="mb-0">
                                 <a href="tel:07-123-4567"><span class="material-icons mr-3 align-middle">
                                         phone
                                     </span>07-123-4567</a>
                             </h4>
-                        </li>
-                        <li>
-                            <a href="#">Copyright © 2020 PetPet. All rights reserved.</a>
-                        </li>
-                    </ul>
+                        </div>
+                        <h5 class="text-base">
+                            Copyright © 2020 PetPet. All rights reserved.
+                        </h5>
+                    </div>
                 </div>
             </div>
         </footer>
